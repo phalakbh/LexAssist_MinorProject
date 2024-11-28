@@ -1,0 +1,2361 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "How are you?", "Is anyone there?", "Hello", "Good day", "What's up?", "Hey", "Greetings", "Yo"],
+        "responses": ["Hello! How can I assist you today?", "Hi there, what legal or general query do you have?", "Greetings! Let's get started."]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "Goodbye", "See you later", "I am leaving", "Take care", "Cya", "Later", "Bye for now"],
+        "responses": ["Goodbye! Hope to assist you again.", "Take care! Feel free to return with more questions.", "See you next time! Stay informed."]
+      },
+      {
+        "tag": "thanks_reply",
+        "patterns": ["Thank you", "Thanks", "I appreciate it", "Much obliged", "Thanks a lot", "Grateful", "Thanks so much"],
+        "responses": ["You're welcome!", "Glad I could help!", "No problem, happy to assist!", "Anytime!"]
+      },
+      {
+        "tag": "how",
+        "patterns": ["How are you?", "How do you feel?", "How is your day?", "What's up?"],
+        "responses": ["I'm just a bot, but I'm ready to help!", "Feeling great! Let's tackle your query."]
+      },
+      {
+        "tag": "introduction_to_constitution",
+        "patterns": ["What is the Indian Constitution?", "Explain the Constitution of India", "Tell me about the Constitution"],
+        "responses": [
+          "The Indian Constitution is the supreme law of India, outlining the framework for governance, citizen rights, and duties. It came into effect on January 26, 1950."
+        ]
+      },
+      {
+        "tag": "fundamental_rights",
+        "patterns": ["What are fundamental rights?", "List the fundamental rights", "Explain fundamental rights in India"],
+        "responses": [
+          "Fundamental Rights in India include the right to equality, freedom, protection from exploitation, freedom of religion, cultural and educational rights, and constitutional remedies."
+        ]
+      },
+      {
+        "tag": "fundamental_duties",
+        "patterns": ["What are fundamental duties?", "Explain fundamental duties", "Tell me about citizen duties in India"],
+        "responses": [
+          "Fundamental Duties include respecting the Constitution, promoting harmony, protecting the environment, and striving for excellence. They remind citizens of their responsibilities."
+        ]
+      },
+      {
+        "tag": "directive_principles",
+        "patterns": ["What are Directive Principles of State Policy?", "Explain DPSPs", "What are the goals of DPSPs?"],
+        "responses": [
+          "Directive Principles are guidelines for the state to create policies for social welfare, economic equity, and justice. They aim to establish a welfare state."
+        ]
+      },
+      {
+        "tag": "criminal_law_intro",
+        "patterns": ["What is criminal law?", "Explain criminal law", "What does criminal law cover?"],
+        "responses": [
+          "Criminal law deals with offenses against society, including crimes like theft, assault, and murder. It defines punishments and procedures for ensuring justice."
+        ]
+      },
+      {
+        "tag": "ipc_intro",
+        "patterns": ["What is the IPC?", "Explain the Indian Penal Code", "What does IPC stand for?"],
+        "responses": [
+          "The IPC, or Indian Penal Code, is India’s main criminal code. It lists crimes and prescribes penalties for offenses like theft, assault, and fraud."
+        ]
+      },
+      {
+        "tag": "ipc_section_example",
+        "patterns": ["What is IPC Section 302?", "Explain IPC Section 420", "Tell me about Section 376"],
+        "responses": [
+          "Section 302 deals with punishment for murder, which is life imprisonment or the death penalty. Which section would you like to explore further?"
+        ]
+      },
+      {
+        "tag": "filing_fir",
+        "patterns": ["How do I file an FIR?", "What is the process to file an FIR?", "Can I file an FIR online?"],
+        "responses": [
+          "To file an FIR, visit the nearest police station, provide details of the crime, and get a copy of the report. Some states also allow online FIRs for specific offenses."
+        ]
+      },
+      {
+        "tag": "fundamental_differences_constitution_ipc",
+        "patterns": ["Difference between IPC and the Constitution?", "How is IPC different from the Constitution?", "What links the Constitution and IPC?"],
+        "responses": [
+          "The Constitution is the supreme law guiding governance, while the IPC outlines criminal offenses and penalties. Both ensure justice but serve different purposes."
+        ]
+      },      
+      {
+        "tag": "bail_process",
+        "patterns": ["What is bail?", "How does bail work?", "Can I get bail in a bailable offense?"],
+        "responses": [
+          "Bail allows an accused to remain free during trial. In bailable offenses, it's a right; for non-bailable offenses, the court decides based on circumstances."
+        ]
+      },
+      {
+        "tag": "landmark_cases",
+        "patterns": ["What are landmark cases in Indian law?", "Explain Kesavananda Bharati case", "What is the significance of Maneka Gandhi case?"],
+        "responses": [
+          "Landmark cases include Kesavananda Bharati, defining the Constitution's basic structure, and Maneka Gandhi, expanding the scope of personal liberty. Which one do you want to know more about?"
+        ]
+      },
+      {
+        "tag": "conversation_fun",
+        "patterns": ["Tell me a fun fact about law", "Share a trivia about the Constitution", "Do you know a legal fun fact?"],
+        "responses": [
+          "The Indian Constitution is the longest written constitution in the world, with 448 articles and 12 schedules!"
+        ]
+      },
+      {
+        "tag": "civil_law_intro",
+        "patterns": ["What is civil law?", "Explain civil law", "What are civil cases?"],
+        "responses": [
+          "Civil law deals with disputes between individuals or organizations, like property disputes, contracts, and personal injury claims. It focuses on compensation rather than punishment."
+        ]
+      },
+      {
+        "tag": "consumer_protection",
+        "patterns": ["What is consumer protection?", "Explain consumer rights", "How does the law protect consumers?"],
+        "responses": [
+          "The Consumer Protection Act safeguards consumer rights, including protection against unfair trade practices, defective goods, and substandard services."
+        ]
+      },
+      {
+        "tag": "intellectual_property_law",
+        "patterns": ["What is intellectual property law?", "Explain copyright law", "Tell me about patents in India"],
+        "responses": [
+          "Intellectual property law protects creations of the mind, such as inventions (patents), artistic works (copyrights), and brands (trademarks)."
+        ]
+      },
+      {
+        "tag": "cybercrime",
+        "patterns": ["What is cybercrime?", "Explain laws for online crimes", "How does India handle cybercrime?"],
+        "responses": [
+          "Cybercrimes include hacking, identity theft, and online fraud. The IT Act, 2000, governs cyber offenses and ensures digital safety."
+        ]
+      },
+      {
+        "tag": "environmental_law",
+        "patterns": ["What are environmental laws in India?", "How does the law protect the environment?", "Tell me about environmental protection laws"],
+        "responses": [
+          "Environmental laws in India include the Environment Protection Act and the Wildlife Protection Act. They aim to safeguard biodiversity and regulate pollution."
+        ]
+      },
+      {
+        "tag": "women_rights",
+        "patterns": ["What are women rights in India?", "Explain laws for women protection", "How does the law protect women?"],
+        "responses": [
+          "Laws like the Domestic Violence Act and Maternity Benefit Act ensure women's safety and rights, offering protection, equality, and workplace support."
+        ]
+      },
+      {
+        "tag": "law_career",
+        "patterns": ["How do I become a lawyer?", "What are career options in law?", "Tell me about legal education"],
+        "responses": [
+          "To become a lawyer in India, pursue a law degree (LLB) after Class 12 or graduation, pass the Bar Council exam, and start practicing."
+        ]
+      },
+      {
+        "tag": "dispute_resolution",
+        "patterns": ["What is dispute resolution?", "How are disputes settled outside court?", "Tell me about arbitration"],
+        "responses": [
+          "Dispute resolution includes arbitration, mediation, and conciliation to settle conflicts outside court, saving time and resources."
+        ]
+      },
+      {
+        "tag": "right_to_information",
+        "patterns": ["What is the Right to Information?", "Explain RTI", "How does RTI work?"],
+        "responses": [
+          "The RTI Act enables citizens to request information from public authorities, promoting transparency and accountability in governance."
+        ]
+      },
+      {
+        "tag": "traffic_rules",
+        "patterns": ["What are traffic rules in India?", "Explain traffic violations", "What are the penalties for traffic offenses?"],
+        "responses": [
+          "Traffic rules ensure road safety. Violations like overspeeding or drunk driving attract penalties under the Motor Vehicles Act."
+        ]
+      },
+      {
+        "tag": "labor_law_intro",
+        "patterns": ["What is labor law?", "Tell me about labor laws", "What are the rights of workers in India?"],
+        "responses": [
+          "Labor law in India regulates workers' rights, including minimum wage, working conditions, and dispute resolution between employers and employees."
+        ]
+      },
+      {
+        "tag": "employment_contracts",
+        "patterns": ["What is an employment contract?", "Tell me about job contracts", "What are the terms in an employment contract?"],
+        "responses": [
+          "An employment contract outlines terms of employment, such as job responsibilities, salary, work hours, and termination conditions. It protects both employer and employee."
+        ]
+      },
+      {
+        "tag": "minimum_wage",
+        "patterns": ["What is minimum wage?", "Explain minimum wage law", "How does the law define minimum wage?"],
+        "responses": [
+          "The Minimum Wage Act ensures that workers receive a basic pay for their labor. The rate varies based on the industry and region."
+        ]
+      },
+      {
+        "tag": "industrial_disputes",
+        "patterns": ["What are industrial disputes?", "Explain industrial disputes resolution", "How are labor disputes settled?"],
+        "responses": [
+          "Industrial disputes are conflicts between employers and employees, often about wages, working conditions, or benefits. They can be resolved through negotiations, mediation, or through the Industrial Disputes Act."
+        ]
+      },
+      {
+        "tag": "gratuity",
+        "patterns": ["What is gratuity?", "Tell me about gratuity benefits", "Who is eligible for gratuity?"],
+        "responses": [
+          "Gratuity is a retirement benefit for employees who have worked for a company for at least five years. It is a lump sum paid based on salary and years of service."
+        ]
+      },
+      {
+        "tag": "employee_rights",
+        "patterns": ["What are employee rights in India?", "Explain workers' rights", "What legal protections do employees have?"],
+        "responses": [
+          "Employee rights in India include protection from discrimination, the right to fair wages, maternity leave, and a safe working environment under various labor laws."
+        ]
+      },
+      {
+        "tag": "property_law_intro",
+        "patterns": ["What is property law?", "Tell me about property rights", "What does property law cover?"],
+        "responses": [
+          "Property law governs the ownership, use, and transfer of property. It deals with both movable and immovable property, including land, buildings, and intellectual property."
+        ]
+      },
+      {
+        "tag": "real_estate_law",
+        "patterns": ["What is real estate law?", "Tell me about property transactions", "How are real estate disputes resolved?"],
+        "responses": [
+          "Real estate law covers the buying, selling, and leasing of property. It includes legal procedures for ownership transfer, contracts, and property disputes."
+        ]
+      },
+      {
+        "tag": "property_inheritance",
+        "patterns": ["What is property inheritance?", "How does property transfer after death?", "Explain inheritance laws in India"],
+        "responses": [
+          "Property inheritance laws govern the transfer of property after someone's death. It can be done through a will or according to personal laws of succession, like Hindu Succession Act or Indian Succession Act."
+        ]
+      },
+      {
+        "tag": "lease_agreements",
+        "patterns": ["What is a lease agreement?", "Explain lease laws", "What are the terms in a property lease?"],
+        "responses": [
+          "A lease agreement is a contract between a property owner (lessor) and a tenant (lessee) for the rental of property. It outlines rent, duration, and other responsibilities of both parties."
+        ]
+      },
+      {
+        "tag": "eviction_laws",
+        "patterns": ["What are eviction laws?", "Tell me about tenant eviction", "How does eviction work under Indian law?"],
+        "responses": [
+          "Eviction laws protect both tenants and landlords. If a tenant fails to pay rent or violates the lease terms, the landlord can file for eviction under the Rent Control Act or other applicable laws."
+        ]
+      },
+      {
+        "tag": "property_disputes",
+        "patterns": ["What is a property dispute?", "How are property disputes resolved?", "Explain property legal cases in India"],
+        "responses": [
+          "Property disputes can involve ownership, boundaries, or inheritance issues. They are resolved through civil courts, and in some cases, alternative dispute resolution mechanisms like arbitration."
+        ]
+      },
+      {
+        "tag": "domestic_violence",
+        "patterns": ["What is domestic violence?", "Explain laws related to domestic violence", "How does the law protect women from domestic violence?"],
+        "responses": [
+          "Domestic violence laws protect women from physical, emotional, or sexual abuse by a partner or family member. The Protection of Women from Domestic Violence Act (2005) offers remedies such as shelter, compensation, and restraining orders."
+        ]
+      },
+      {
+        "tag": "sexual_harassment",
+        "patterns": ["What is sexual harassment?", "Tell me about sexual harassment laws", "How are women protected from sexual harassment?"],
+        "responses": [
+          "Sexual harassment laws, such as the Sexual Harassment of Women at Workplace (Prevention, Prohibition, and Redressal) Act, aim to provide a safe work environment for women by establishing grievance redressal mechanisms and penalties for offenders."
+        ]
+      },
+      {
+        "tag": "maternity_leave",
+        "patterns": ["What is maternity leave?", "How long is maternity leave in India?", "Tell me about the law on maternity leave"],
+        "responses": [
+          "The Maternity Benefit Act ensures that women receive paid leave during pregnancy and childbirth. In India, the law provides for 26 weeks of paid maternity leave for women working in organizations with 10 or more employees."
+        ]
+      },
+      {
+        "tag": "women_property_rights",
+        "patterns": ["Do women have property rights?", "What are women's rights to inherit property?", "Tell me about property rights for women"],
+        "responses": [
+          "Women have the right to inherit and own property. Under the Hindu Succession Act, 2005, women have equal rights as men to inherit ancestral property. Women can also own, buy, and sell property independently."
+        ]
+      },
+      {
+        "tag": "child_rights_intro",
+        "patterns": ["What are children's rights?", "Tell me about children's rights law", "What legal protections do children have?"],
+        "responses": [
+          "Children's rights include protection from abuse, access to education, health care, and the right to a safe environment. These rights are enshrined in various laws like the Juvenile Justice Act and international treaties like the UN Convention on the Rights of the Child."
+        ]
+      },
+      {
+        "tag": "child_labor",
+        "patterns": ["What is child labor?", "Tell me about laws against child labor", "How does the law protect children from child labor?"],
+        "responses": [
+          "Child labor laws prohibit the employment of children below the age of 14 in hazardous occupations. The Child and Adolescent Labour (Prohibition and Regulation) Act, 1986 protects children from exploitation by setting age limits for employment."
+        ]
+      },
+      {
+        "tag": "child_abuse",
+        "patterns": ["What is child abuse?", "How does the law address child abuse?", "Tell me about laws for protecting children from abuse"],
+        "responses": [
+          "Child abuse laws protect children from physical, emotional, or sexual harm. The Protection of Children from Sexual Offences (POCSO) Act, 2012, provides a legal framework for the protection of children from sexual abuse and exploitation."
+        ]
+      },
+      {
+        "tag": "juvenile_justice",
+        "patterns": ["What is juvenile justice?", "How are juvenile offenders treated under law?", "Tell me about juvenile justice law"],
+        "responses": [
+          "The Juvenile Justice (Care and Protection of Children) Act, 2015, focuses on rehabilitating children who are in conflict with the law. Juveniles are treated differently from adults and are provided with a child-friendly legal process."
+        ]
+      },
+      {
+        "tag": "child_adoption",
+        "patterns": ["What is child adoption?", "How does the adoption process work in India?", "Tell me about the law on child adoption"],
+        "responses": [
+          "The adoption of children is regulated under the Juvenile Justice Act. It requires that adoptive parents meet specific eligibility criteria and that the adoption is finalized through a legal process to ensure the child’s welfare."
+        ]
+      },
+      {
+        "tag": "freedom_of_religion",
+        "patterns": ["What is the right to freedom of religion?", "How is religious freedom protected by law?", "Explain the laws related to freedom of religion in India"],
+        "responses": [
+          "Article 25-28 of the Indian Constitution guarantee the right to freedom of religion, allowing individuals to practice, propagate, and manage their religious affairs. It also prohibits discrimination based on religion."
+        ]
+      },
+      {
+        "tag": "cultural_educational_rights",
+        "patterns": ["What are cultural and educational rights?", "How are the rights of minorities protected in education?", "Tell me about laws protecting culture and education"],
+        "responses": [
+          "Article 29 and 30 protect the rights of minorities to establish educational institutions and preserve their culture and language. This ensures that no citizen is denied access to education based on their culture or religion."
+        ]
+      },
+      {
+        "tag": "constitutional_remedies",
+        "patterns": ["What is the right to constitutional remedies?", "How can citizens approach the Supreme Court for rights violations?", "What is Article 32?"],
+        "responses": [
+          "Article 32 guarantees the right to approach the Supreme Court directly to enforce fundamental rights. It also empowers the Court to issue writs like habeas corpus, mandamus, and prohibition to protect rights."
+        ]
+      },
+      {
+        "tag": "promotion_of_welfare",
+        "patterns": ["What are the directive principles of state policy?", "Tell me about the welfare of people under Indian law", "How does the state promote welfare in India?"],
+        "responses": [
+          "The Directive Principles of State Policy, though not enforceable by law, guide the state to promote welfare measures, such as securing health care, education, and employment for all citizens."
+        ]
+      },
+      {
+        "tag": "uniform_civil_code",
+        "patterns": ["What is the Uniform Civil Code?", "Explain the concept of a Uniform Civil Code in India", "How does the Uniform Civil Code affect personal laws?"],
+        "responses": [
+          "Article 44 advocates a Uniform Civil Code for all citizens, irrespective of their religion. The aim is to bring about uniformity in laws related to marriage, inheritance, and adoption across all communities."
+        ]
+      },
+      {
+        "tag": "habeas_corpus",
+        "patterns": [
+          "What does habeas corpus mean?",
+          "Explain habeas corpus in simple terms",
+          "What is a writ of habeas corpus?"
+        ],
+        "responses": [
+          "Habeas corpus is a legal action that requires a person who is holding someone in custody to bring the person before a court. It's a way to protect individuals from illegal detention."
+        ]
+      },
+      {
+        "tag": "mandamus",
+        "patterns": [
+          "What is mandamus in simple terms?",
+          "Explain the writ of mandamus",
+          "What does mandamus mean?"
+        ],
+        "responses": [
+          "Mandamus is a court order that requires a public official or government agency to perform a duty they are legally obligated to do. It forces the action when it's being neglected."
+        ]
+      },
+      {
+        "tag": "prohibition_writ",
+        "patterns": [
+          "What does a writ of prohibition do?",
+          "Explain writ of prohibition",
+          "In simple terms, what is a prohibition writ?"
+        ],
+        "responses": [
+          "A writ of prohibition is a court order that stops a lower court or tribunal from acting beyond its authority or jurisdiction. It’s like telling someone to stop doing something illegal or overstepping their boundaries."
+        ]
+      },
+      {
+        "tag": "certiorari",
+        "patterns": [
+          "What is certiorari in simple words?",
+          "Explain the term certiorari",
+          "What does a writ of certiorari mean?"
+        ],
+        "responses": [
+          "Certiorari is a court order to a lower court to send up the records of a case for review. It’s used to check if a lower court made any mistakes in their decision."
+        ]
+      },
+      {
+        "tag": "pro bono",
+        "patterns": [
+          "What does pro bono mean?",
+          "Explain pro bono services",
+          "What is a pro bono lawyer?"
+        ],
+        "responses": [
+          "Pro bono means 'for the public good'. In legal terms, it refers to work done by lawyers for free or at a very low cost, usually for people who cannot afford legal fees."
+        ]
+      },
+      {
+        "tag": "amicus_curiae",
+        "patterns": [
+          "What is amicus curiae?",
+          "Explain amicus curiae in simple words",
+          "What does an amicus curiae do?"
+        ],
+        "responses": [
+          "Amicus curiae is a Latin term meaning 'friend of the court'. It refers to someone who is not a party in a case but offers information or expertise that could help the court make its decision."
+        ]
+      },
+      {
+        "tag": "ex_post_facto_law",
+        "patterns": [
+          "What does ex post facto mean?",
+          "Explain ex post facto law",
+          "What is the significance of ex post facto laws?"
+        ],
+        "responses": [
+          "An ex post facto law is one that makes an act illegal after it has already been done. It’s prohibited in many legal systems because it punishes actions that were not illegal at the time they were committed."
+        ]
+      },
+      {
+        "tag": "res_judicata",
+        "patterns": [
+          "What does res judicata mean?",
+          "Explain the concept of res judicata",
+          "What is the legal term res judicata?"
+        ],
+        "responses": [
+          "Res judicata means 'a matter already judged'. It refers to the idea that once a court has made a final decision on a case, the same issue cannot be tried again in another court."
+        ]
+      },
+      {
+        "tag": "sub judice",
+        "patterns": [
+          "What does sub judice mean?",
+          "Explain sub judice in simple words",
+          "What is the term sub judice used for?"
+        ],
+        "responses": [
+          "Sub judice means that a matter is currently under judicial consideration or being tried in court. It suggests that discussions or comments about the case should be avoided to not influence the court."
+        ]
+      },
+      {
+        "tag": "actus_reus",
+        "patterns": [
+          "What is actus reus in simple terms?",
+          "Explain actus reus",
+          "What does the term actus reus mean?"
+        ],
+        "responses": [
+          "Actus reus is a Latin term that means 'guilty act'. It refers to the physical action or conduct that constitutes a criminal offense, such as theft or assault."
+        ]
+      },
+      {
+        "tag": "mens_rea",
+        "patterns": [
+          "What is mens rea in simple terms?",
+          "Explain mens rea",
+          "What does the term mens rea mean?"
+        ],
+        "responses": [
+          "Mens rea is a Latin term meaning 'guilty mind'. It refers to the mental state or intent of a person when committing a criminal act. For example, acting with the intent to harm someone."
+        ]
+      },
+      {
+        "tag": "tort",
+        "patterns": [
+          "What does tort mean?",
+          "Explain the term tort",
+          "What is a tort in legal terms?"
+        ],
+        "responses": [
+          "A tort is a civil wrong that causes harm to someone, for which the injured person can seek compensation. Examples include personal injury, defamation, or trespassing."
+        ]
+      },
+      {
+        "tag": "duress",
+        "patterns": [
+          "What is duress in legal terms?",
+          "Explain duress",
+          "What does duress mean in law?"
+        ],
+        "responses": [
+          "Duress refers to a situation where someone is forced to act against their will due to threats or violence. If someone commits a crime under duress, they may not be fully responsible for their actions."
+        ]
+      },
+      {
+        "tag": "vicarious_liability",
+        "patterns": [
+          "What is vicarious liability?",
+          "Explain vicarious liability in simple terms",
+          "What does vicarious liability mean?"
+        ],
+        "responses": [
+          "Vicarious liability is when one person is held responsible for the actions of another, usually in the context of an employer being held liable for the actions of their employee while they are working."
+        ]
+      },
+      {
+        "tag": "quasi_contract",
+        "patterns": [
+          "What is a quasi-contract?",
+          "Explain the concept of quasi-contract",
+          "What does quasi-contract mean in simple terms?"
+        ],
+        "responses": [
+          "A quasi-contract is not a real contract but a situation where a court enforces a duty on one party to prevent unjust enrichment, even though no formal agreement was made."
+        ]
+      },
+      {
+        "tag": "cybercrime_definition",
+        "patterns": [
+          "What is cybercrime?",
+          "Can you explain cybercrime?",
+          "How do you define cybercrime?"
+        ],
+        "responses": [
+          "Cybercrime refers to illegal activities conducted using computers or the internet. This includes crimes like hacking, online fraud, identity theft, and the distribution of malicious software (malware)."
+        ]
+      },
+      {
+        "tag": "cybercrime_impact",
+        "patterns": [
+          "What is the impact of cybercrime?",
+          "How does cybercrime affect people?",
+          "Can you tell me about the consequences of cybercrime?"
+        ],
+        "responses": [
+          "Cybercrime can have severe consequences, such as financial loss, damage to reputation, loss of personal data, and even identity theft. It can also lead to legal penalties and damage to businesses' operations."
+        ]
+      },
+      {
+        "tag": "types_of_cybercrime",
+        "patterns": [
+          "What are the different types of cybercrime?",
+          "Can you tell me about the types of cybercrime?"
+        ],
+        "responses": [
+          "Cybercrime includes various forms, such as hacking, identity theft, phishing, cyberbullying, ransomware, and data breaches. Each type involves different methods of exploiting technology for criminal activities."
+        ]
+      },
+      {
+        "tag": "hacking",
+        "patterns": [
+          "What is hacking?",
+          "Can you explain what hacking means?",
+          "How does hacking work?"
+        ],
+        "responses": [
+          "Hacking involves gaining unauthorized access to computer systems, networks, or accounts to steal data, alter information, or cause harm. Hackers may target individuals, organizations, or governments."
+        ]
+      },
+      {
+        "tag": "identity_theft",
+        "patterns": [
+          "What is identity theft?",
+          "How does identity theft happen?",
+          "Can you explain identity theft?"
+        ],
+        "responses": [
+          "Identity theft occurs when someone unlawfully obtains another person’s personal information, such as social security numbers or credit card details, to commit fraud or steal money."
+        ]
+      },
+      {
+        "tag": "phishing",
+        "patterns": [
+          "What is phishing?",
+          "Can you explain phishing scams?",
+          "How do phishing attacks work?"
+        ],
+        "responses": [
+          "Phishing is a type of cybercrime where attackers impersonate legitimate entities through email, phone calls, or text messages to steal sensitive information, like passwords and financial details, from victims."
+        ]
+      },
+      {
+        "tag": "ransomware",
+        "patterns": [
+          "What is ransomware?",
+          "How does ransomware work?",
+          "Can you explain ransomware attacks?"
+        ],
+        "responses": [
+          "Ransomware is a form of malware that locks or encrypts a victim's data, demanding payment (usually in cryptocurrency) to release it. It can affect individuals, businesses, or government systems."
+        ]
+      },
+      {
+        "tag": "cyberbullying",
+        "patterns": [
+          "What is cyberbullying?",
+          "How does cyberbullying happen?",
+          "Can you explain the impact of cyberbullying?"
+        ],
+        "responses": [
+          "Cyberbullying refers to the use of digital platforms, like social media or messaging apps, to harass, threaten, or spread harmful content about someone. It can cause emotional distress, harm reputation, and lead to mental health issues."
+        ]
+      },
+      {
+        "tag": "data_breach",
+        "patterns": [
+          "What is a data breach?",
+          "How do data breaches happen?",
+          "Can you explain what a data breach is?"
+        ],
+        "responses": [
+          "A data breach occurs when unauthorized individuals access confidential data, such as personal, financial, or business information. This can lead to identity theft, fraud, or loss of private information."
+        ]
+      },
+      {
+        "tag": "cybercrime_prevention",
+        "patterns": [
+          "How can I protect myself from cybercrime?",
+          "What are some tips to prevent cybercrime?"
+        ],
+        "responses": [
+          "To protect yourself from cybercrime, use strong passwords, enable two-factor authentication, avoid clicking on suspicious links, keep your software updated, and use reliable antivirus programs."
+        ]
+      },
+      {
+        "tag": "theft_legal_framework",
+        "patterns": [
+          "Under which act can I seek help for theft?",
+          "Which laws help me if I am a victim of theft?",
+          "What are the legal provisions for theft?"
+        ],
+        "responses": [
+          "In most countries, theft is addressed under the Criminal Law, specifically within the Penal Code. In India, for instance, theft is covered under sections 378 to 382 of the Indian Penal Code (IPC). Other countries have their own criminal codes or theft-specific legislation."
+        ]
+      },
+      {
+        "tag": "ipc_theft_sections",
+        "patterns": [
+          "What sections of the IPC deal with theft?",
+          "Can you tell me about the IPC sections for theft?",
+          "Which sections of the Indian Penal Code address theft?"
+        ],
+        "responses": [
+          "In the Indian Penal Code (IPC), theft is covered under sections 378 to 382. Section 378 defines theft, while Section 379 deals with punishment for theft. Section 380 focuses on theft in a dwelling, and Section 381 covers theft by a servant."
+        ]
+      },
+      {
+        "tag": "punishment_for_theft",
+        "patterns": [
+          "What is the punishment for theft?",
+          "What penalty can I face if I steal?",
+          "How does the law punish theft?"
+        ],
+        "responses": [
+          "The punishment for theft can vary depending on the severity and circumstances of the theft. In India, under section 379 of the IPC, the punishment can include imprisonment of up to 3 years or a fine, or both. If the theft is more serious, such as robbery or burglary, the punishment can be much harsher."
+        ]
+      },
+      {
+        "tag": "theft_report_process",
+        "patterns": [
+          "How do I report theft?",
+          "What should I do if my property is stolen?",
+          "How can I file a theft complaint?"
+        ],
+        "responses": [
+          "To report theft, visit your local police station and file an FIR (First Information Report). Provide detailed information about the theft, including when and where it happened, what was stolen, and any evidence you may have. The police will investigate the case and take further action."
+        ]
+      },
+      {
+        "tag": "theft_recognition_act",
+        "patterns": [
+          "What is the Theft Recognition Act?",
+          "Can you tell me about the Theft Recognition Act?",
+          "What provisions are included in the Theft Recognition Act?"
+        ],
+        "responses": [
+          "The Theft Recognition Act is not a universally recognized law but may refer to national or regional provisions that focus on the recognition and classification of theft-related offenses. Different countries have specific laws, like the Criminal Procedure Code (CrPC) in India, which lays down the process for recognizing and prosecuting theft crimes."
+        ]
+      },
+      {
+        "tag": "cyber_theft_laws",
+        "patterns": [
+          "What laws deal with cyber theft?",
+          "How does the law handle cyber theft?",
+          "Can you explain laws related to cyber theft?"
+        ],
+        "responses": [
+          "Cyber theft or identity theft is handled under cyber laws in most countries. In India, the Information Technology Act, 2000, addresses cybercrimes including cyber theft, hacking, and identity fraud. Under this act, perpetrators can be punished for illegally accessing and stealing data from online sources."
+        ]
+      },
+      {
+        "tag": "theft_in_employment",
+        "patterns": [
+          "What are the legal actions for theft at the workplace?",
+          "How is theft by an employee addressed under the law?",
+          "What happens if an employee steals from their employer?"
+        ],
+        "responses": [
+          "Theft by an employee is addressed through both criminal and civil laws. Under the IPC, an employee found guilty of stealing from the employer may be charged with theft, and the employer can file a criminal complaint. Additionally, the employer may take civil action to recover stolen property or damages."
+        ]
+      },
+      {
+        "tag": "criminal_breach_of_trust",
+        "patterns": [
+          "What is criminal breach of trust?",
+          "How is criminal breach of trust related to theft?",
+          "Can theft be considered criminal breach of trust?"
+        ],
+        "responses": [
+          "Criminal breach of trust is a legal term under Section 405 of the IPC, where a person entrusted with property or money dishonestly misappropriates it. This is often used in cases of embezzlement or when someone in a fiduciary position, like an employee or trustee, steals from their employer or client."
+        ]
+      },
+      {
+        "tag": "theft_in_property_laws",
+        "patterns": [
+          "How does property law handle theft?",
+          "What laws protect property from theft?",
+          "Which laws ensure protection against property theft?"
+        ],
+        "responses": [
+          "Property theft is addressed by criminal law, and the property owner can seek legal remedies under the law. In cases of theft involving real estate or personal property, local property laws, as well as criminal laws like those in the IPC, can be used to prosecute offenders and recover stolen property."
+        ]
+      },
+      {
+        "tag": "minority_rights_provision",
+        "patterns": [
+          "What are the legal rights of minorities in India?",
+          "Which laws protect minority rights in India?",
+          "How can minorities seek legal protection?"
+        ],
+        "responses": [
+          "In India, minority rights are protected under the Constitution, particularly Article 29 and Article 30. Article 29 provides protection to minorities from cultural or educational discrimination, while Article 30 grants minorities the right to establish and administer educational institutions. The National Commission for Minorities also safeguards the interests of minority communities."
+        ]
+      },
+      {
+        "tag": "religious_minorities_rights",
+        "patterns": [
+          "What rights do religious minorities have under Indian law?",
+          "Can religious minorities set up educational institutions?",
+          "What laws protect religious minorities in India?"
+        ],
+        "responses": [
+          "Religious minorities in India are protected under Article 30 of the Indian Constitution, which allows them to establish and manage their own educational institutions without government interference. The law ensures that religious minorities can maintain their distinct cultural and educational identity."
+        ]
+      },
+      {
+        "tag": "linguistic_minorities_rights",
+        "patterns": [
+          "How are linguistic minorities protected in India?",
+          "What laws protect the language rights of minorities?",
+          "Are there laws that protect linguistic minorities in India?"
+        ],
+        "responses": [
+          "Linguistic minorities in India are protected under Article 29 of the Indian Constitution, which provides them the right to conserve their language, script, or culture. Additionally, the Official Languages Act ensures linguistic minorities have the right to use their language for official purposes in certain regions."
+        ]
+      },
+      {
+        "tag": "convicted_person_rights",
+        "patterns": [
+          "What are the rights of a convicted person in India?",
+          "Do convicted individuals have any legal rights?",
+          "Can a convicted person appeal against their conviction?"
+        ],
+        "responses": [
+          "Convicted individuals in India have certain rights, including the right to appeal against their conviction, the right to fair treatment during imprisonment, and the right to consult with a lawyer. They are also entitled to protection against torture and inhuman treatment under Article 21 of the Constitution."
+        ]
+      },
+      {
+        "tag": "appeal_process_for_convicted",
+        "patterns": [
+          "How can a convicted person appeal against a sentence?",
+          "What is the process of appealing a criminal conviction in India?",
+          "Can I appeal if I'm convicted of a crime?"
+        ],
+        "responses": [
+          "A convicted person in India has the right to appeal to a higher court, usually the High Court or the Supreme Court, depending on the case. The appeal process involves submitting an appeal within a specified period, presenting grounds for appeal, and requesting a review of the case."
+        ]
+      },
+      {
+        "tag": "legal_aid_for_convicted_persons",
+        "patterns": [
+          "Can a convicted person get legal aid in India?",
+          "How can a convicted individual receive legal assistance?",
+          "Are there provisions for free legal aid for convicted persons?"
+        ],
+        "responses": [
+          "Yes, convicted persons in India are entitled to legal aid under the Legal Services Authorities Act, 1987. They can apply for free legal assistance if they cannot afford a lawyer, especially during the appeal process or when seeking bail."
+        ]
+      },
+      {
+        "tag": "parole_and_bail_for_convicted",
+        "patterns": [
+          "Can a convicted person apply for parole?",
+          "What is the process to get parole in India?",
+          "How can a convicted person seek bail after conviction?"
+        ],
+        "responses": [
+          "A convicted person can apply for parole under the provisions of the Indian Penal Code and the Prisons Act. Parole is usually granted based on good behavior and the duration of sentence served. Similarly, a convicted person can seek bail under specific circumstances, such as for appealing the conviction or for medical reasons."
+        ]
+      },
+      {
+        "tag": "reformation_and_rehabilitation_for_convicts",
+        "patterns": [
+          "What are the rehabilitation programs for convicts in India?",
+          "Is there any support for the reformation of convicted people?",
+          "How does the law help in reforming convicts?"
+        ],
+        "responses": [
+          "In India, the law encourages the reformation and rehabilitation of convicts through various programs, including vocational training, education, and psychological counseling. The Prisons Act and the Probation of Offenders Act, 1958, provide provisions for the rehabilitation of offenders through probation and aftercare."
+        ]
+      },
+      {
+        "tag": "Immigration_Visas",
+        "patterns": [
+          "What types of visas are available for immigrants?"
+        ],
+        "responses": [
+          "There are several types of visas depending on your purpose of visit: tourist visas, work visas, student visas, etc."
+        ]
+      },
+      {
+        "tag": "Immigration_Application_Process",
+        "patterns": [
+          "How can I apply for a visa?"
+        ],
+        "responses": [
+          "The visa application process typically involves submitting an online form, providing supporting documents (passport, financial proofs, etc.), and waiting for approval."
+        ]
+      },
+      {
+        "tag": "Immigration_Visas_Process",
+        "patterns": [
+          "What is the process for getting an immigration visa?"
+        ],
+        "responses": [
+          "The immigration visa process usually involves applying through the official immigration website, paying the visa fee, and attending a visa interview if required."
+        ]
+      },
+      {
+        "tag": "Immigration_Permanent_Residency",
+        "patterns": [
+          "How can I apply for permanent residency?"
+        ],
+        "responses": [
+          "To apply for permanent residency, you typically need to have lived in the country for a certain period (usually 2-5 years). You must also demonstrate good moral character, financial stability, and pass any language or health tests."
+        ]
+      },
+      {
+        "tag": "Immigration_Permanent_Residency_Requirements",
+        "patterns": [
+          "What are the requirements for obtaining permanent residency?"
+        ],
+        "responses": [
+          "The requirements for obtaining permanent residency often include a long-term visa status, proof of employment, family ties, or investment in the country."
+        ]
+      },
+      {
+        "tag": "Immigration_Permanent_Residency_Time",
+        "patterns": [
+          "How long does it take to get permanent residency?"
+        ],
+        "responses": [
+          "The processing time for permanent residency varies by country, but it typically takes several months to a few years depending on the country’s immigration policies."
+        ]
+      },
+      {
+        "tag": "Immigration_Citizenship",
+        "patterns": [
+          "How do I become a citizen of [Country]?"
+        ],
+        "responses": [
+          "To become a citizen, you usually need to have permanent residency status for a certain period (e.g., 5 years), pass a citizenship test, and prove your language skills."
+        ]
+      },
+      {
+        "tag": "Immigration_Citizenship_Criteria",
+        "patterns": [
+          "What are the criteria for citizenship?"
+        ],
+        "responses": [
+          "Criteria for citizenship often include residency requirements, proficiency in the country’s language, passing a cultural knowledge test, and demonstrating financial independence."
+        ]
+      },
+      {
+        "tag": "Immigration_Citizenship_Application",
+        "patterns": [
+          "Can I apply for citizenship after permanent residency?"
+        ],
+        "responses": [
+          "Yes, you can apply for citizenship after meeting the residency requirements and fulfilling all necessary conditions for naturalization."
+        ]
+      },
+      {
+        "tag": "Immigration_Deportation",
+        "patterns": [
+          "Can I be deported from the country?"
+        ],
+        "responses": [
+          "Yes, you can be deported if you violate immigration laws or overstay your visa."
+        ]
+      },
+      {
+        "tag": "Immigration_Deportation_Appeal",
+        "patterns": [
+          "What can I do if I am facing deportation?"
+        ],
+        "responses": [
+          "If you are facing deportation, you should consult an immigration lawyer who can help you understand your rights and options to appeal the decision."
+        ]
+      },
+      {
+        "tag": "Immigration_Deportation_Grounds",
+        "patterns": [
+          "What are the grounds for deportation?"
+        ],
+        "responses": [
+          "Grounds for deportation can include overstaying a visa, committing a crime, providing false information during your immigration process, or violating visa conditions."
+        ]
+      },
+      {
+        "tag": "RTI_Filing",
+        "patterns": [
+          "How do I file an RTI request?"
+        ],
+        "responses": [
+          "To file an RTI request, you need to submit a written application to the concerned public authority, specifying the information you are seeking. You may submit the application online or in person."
+        ]
+      },
+      {
+        "tag": "RTI_Information_Requested",
+        "patterns": [
+          "What information can I request under RTI?"
+        ],
+        "responses": [
+          "Under RTI, you can request any information held by public authorities, such as government documents, decisions, reports, or records related to public services."
+        ]
+      },
+      {
+        "tag": "RTI_Application_Submission",
+        "patterns": [
+          "How can I submit my RTI application?"
+        ],
+        "responses": [
+          "You can submit your RTI application through the official online RTI portal or by physically submitting the application to the relevant government department or authority."
+        ]
+      },
+      {
+        "tag": "RTI_Timelines",
+        "patterns": [
+          "How long does it take to get a response to an RTI request?"
+        ],
+        "responses": [
+          "According to the RTI Act, the public authority must respond within 30 days of receiving your request. However, if the information concerns your life or liberty, the response must be provided within 48 hours."
+        ]
+      },
+      {
+        "tag": "RTI_Processing_Time",
+        "patterns": [
+          "What are the timelines for processing RTI applications?"
+        ],
+        "responses": [
+          "The timelines for processing RTI applications vary by the type of information requested, but a response is generally expected within 30 days. If there is any delay, the applicant should be informed of the reason."
+        ]
+      },
+      {
+        "tag": "RTI_Information_Response",
+        "patterns": [
+          "When can I expect to receive information after filing an RTI request?"
+        ],
+        "responses": [
+          "After filing your RTI application, you can expect a response within 30 days, unless the requested information is subject to exceptions outlined in the RTI Act."
+        ]
+      },
+      {
+        "tag": "RTI_Exemptions",
+        "patterns": [
+          "What information cannot be requested under RTI?"
+        ],
+        "responses": [
+          "Certain information is exempted from disclosure under RTI, such as classified information related to national security, personal information that violates privacy, and information affecting the sovereignty and integrity of the nation."
+        ]
+      },
+      {
+        "tag": "RTI_Exemptions_Examples",
+        "patterns": [
+          "Are there any exemptions to the RTI Act?"
+        ],
+        "responses": [
+          "Exemptions under the RTI Act include information that could harm the interests of the state, affect relations with foreign countries, or interfere with investigations or judicial proceedings."
+        ]
+      },
+      {
+        "tag": "RTI_Personal_Information",
+        "patterns": [
+          "Can I request personal information of government officials under RTI?"
+        ],
+        "responses": [
+          "Personal information about individuals, including government officials, is generally exempt from RTI unless it is related to public activities or affects the public interest."
+        ]
+      },
+      {
+        "tag": "Health_Legal_Provisions_India",
+        "patterns": [
+          "What are the legal provisions for healthcare access in India?",
+          "What laws in India guarantee healthcare services?"
+        ],
+        "responses": [
+          "In India, the right to health is not explicitly guaranteed under the Constitution, but various laws and policies such as the 'National Health Policy 2017' and 'The Clinical Establishments (Registration and Regulation) Act, 2010' aim to ensure healthcare access to all citizens."
+        ]
+      },
+      {
+        "tag": "Health_Insurance_Laws_India",
+        "patterns": [
+          "Are health insurance policies regulated by Indian law?",
+          "Is health insurance mandatory in India?"
+        ],
+        "responses": [
+          "In India, health insurance is not mandatory, but the 'Insurance Regulatory and Development Authority of India (IRDAI)' regulates health insurance policies. Policies like the 'Ayushman Bharat Pradhan Mantri Jan Arogya Yojana' are designed to provide affordable healthcare coverage for economically vulnerable sections."
+        ]
+      },
+      {
+        "tag": "Health_Consent_Laws_India",
+        "patterns": [
+          "What are the laws related to medical consent in India?",
+          "Can doctors treat patients without their consent in India?"
+        ],
+        "responses": [
+          "Under Indian law, specifically the 'Indian Penal Code (IPC)', medical consent is a legal requirement. Section 90 of the IPC clarifies that medical treatment without the patient's consent can be treated as criminal assault. In case of minors or mentally incapacitated individuals, consent from guardians is necessary."
+        ]
+      },
+      {
+        "tag": "Disability_Legal_Provisions_India",
+        "patterns": [
+          "What legal protections are available for people with disabilities in India?",
+          "What laws protect the rights of persons with disabilities in India?"
+        ],
+        "responses": [
+          "In India, the 'Rights of Persons with Disabilities Act, 2016' provides comprehensive protection to persons with disabilities, including equal opportunities in education, employment, and access to public facilities. It also mandates the reservation of seats in educational institutions and government jobs."
+        ]
+      },
+      {
+        "tag": "Disability_Policy_India",
+        "patterns": [
+          "What is the government policy for people with disabilities in India?",
+          "What schemes exist for people with disabilities in India?"
+        ],
+        "responses": [
+          "The Government of India has introduced several schemes like 'Deendayal Disabled Rehabilitation Scheme' and 'Assistance to Disabled Persons for Purchase/Fitting of Aids and Appliances' to promote equal opportunities and empowerment for persons with disabilities."
+        ]
+      },
+      {
+        "tag": "Elderly_Legal_Provisions_India",
+        "patterns": [
+          "What laws exist for the protection of the elderly in India?",
+          "How does India protect the rights of senior citizens?"
+        ],
+        "responses": [
+          "In India, the 'Maintenance and Welfare of Parents and Senior Citizens Act, 2007' ensures that elderly individuals receive financial and social support from their children. The 'National Policy on Older Persons' (1999) also provides measures for ensuring the well-being of senior citizens."
+        ]
+      },
+      {
+        "tag": "Elderly_Welfare_Schemes_India",
+        "patterns": [
+          "What government schemes exist for the welfare of the elderly in India?",
+          "Are there any financial support schemes for elderly citizens in India?"
+        ],
+        "responses": [
+          "The Indian government offers various welfare schemes for elderly citizens, such as 'Rashtriya Vayoshri Yojana' for providing senior citizens with assistive devices, and 'Indira Gandhi National Old Age Pension Scheme' for providing financial assistance to the elderly below the poverty line."
+        ]
+      },
+      {
+        "tag": "Elderly_Abuse_Laws_India",
+        "patterns": [
+          "What laws protect elderly people from abuse in India?",
+          "Is there a law against elder abuse in India?"
+        ],
+        "responses": [
+          "In India, the 'Maintenance and Welfare of Parents and Senior Citizens Act, 2007' addresses elder abuse, providing provisions for the maintenance and care of elderly parents and making it a legal obligation for children to provide financial support. Additionally, elders are protected from neglect and abuse through this law."
+        ]
+      },
+      {
+        "tag": "writs_definition",
+        "patterns": [
+          "What is a writ?",
+          "Explain writs in India.",
+          "Meaning of writ in law.",
+          "What are writ petitions?"
+        ],
+        "responses": [
+          "A writ is a formal written order issued by a higher authority, typically a court, directing a person or entity to perform or refrain from performing a specific act.",
+          "In India, writs are issued by the Supreme Court under Article 32 and by High Courts under Article 226 of the Constitution to protect fundamental rights."
+        ]
+      },
+      {
+        "tag": "writs_types",
+        "patterns": [
+          "What are the types of writs?",
+          "Explain different writs.",
+          "How many kinds of writs exist?",
+          "Details of writs in Indian Constitution."
+        ],
+        "responses": [
+          "The five types of writs are: 1. Habeas Corpus, 2. Mandamus, 3. Prohibition, 4. Certiorari, and 5. Quo Warranto.",
+          "Writs serve various purposes, like protecting individual liberty (Habeas Corpus) or ensuring public officials fulfill their duties (Mandamus)."
+        ]
+      },
+      {
+        "tag": "drug_possession",
+        "patterns": [
+          "What are the laws for drug possession in India?",
+          "Is drug possession illegal?",
+          "Explain drug laws in India."
+        ],
+        "responses": [
+          "Drug possession is governed by the Narcotic Drugs and Psychotropic Substances (NDPS) Act, 1985. Even small quantities can lead to strict penalties, including imprisonment.",
+          "Under the NDPS Act, possession of banned substances like cannabis, heroin, or cocaine is a serious offense and can result in imprisonment and fines."
+        ]
+      },
+      {
+        "tag": "alcohol_possession",
+        "patterns": [
+          "Is alcohol consumption legal?",
+          "Are there alcohol laws in India?",
+          "What are the legal drinking age limits?"
+        ],
+        "responses": [
+          "Alcohol laws vary by state in India. Some states like Gujarat and Bihar have prohibition policies, while others regulate the sale and consumption age.",
+          "The legal drinking age varies between 18 and 25 years depending on the state. Ensure compliance with your state's laws to avoid penalties."
+        ]
+      },
+      {
+        "tag": "drug_abuse_help",
+        "patterns": [
+          "How to report drug abuse?",
+          "Where to seek help for drug addiction?",
+          "What are the support systems for drug rehabilitation?"
+        ],
+        "responses": [
+          "You can report drug abuse to the Narcotics Control Bureau (NCB) or local police. For addiction support, reach out to government or private rehabilitation centers.",
+          "The Ministry of Social Justice runs drug de-addiction programs. Call helplines like 1800-11-0031 for assistance."
+        ]
+      },
+      {
+        "tag": "drunk_driving",
+        "patterns": [
+          "What is the punishment for drunk driving?",
+          "Explain laws on driving under the influence.",
+          "Is drunk driving illegal?"
+        ],
+        "responses": [
+          "Drunk driving is a punishable offense under the Motor Vehicles Act, 1988. Penalties include fines up to ₹10,000 and/or imprisonment of up to 6 months for first-time offenses.",
+          "For repeat offenses, penalties may include higher fines, longer imprisonment, or license suspension."
+        ]
+      },
+      {
+        "tag": "child_custody",
+        "patterns": [
+          "Who gets custody of a child after divorce?",
+          "What decides custody of minor children?",
+          "How is child custody determined?"
+        ],
+        "responses": [
+          "Child custody is determined based on the child's best interests, including their emotional, educational, and physical well-being. Courts often prioritize the mother's custody for young children unless proven otherwise.",
+          "Custody decisions are governed by laws like the Hindu Minority and Guardianship Act, 1956, or relevant personal laws based on the parents' religion."
+        ]
+      },
+      {
+        "tag": "child_labour",
+        "patterns": [
+          "Is child labour illegal in India?",
+          "What laws prevent child labour?",
+          "At what age can a child work legally?"
+        ],
+        "responses": [
+          "Child labour is prohibited under the Child Labour (Prohibition and Regulation) Act, 1986. Children below 14 years cannot be employed in any hazardous work.",
+          "Under the amended laws, children between 14 and 18 years can only work in non-hazardous occupations."
+        ]
+      },
+      {
+        "tag": "education_rights",
+        "patterns": [
+          "Do children have a right to education?",
+          "What is the RTE Act?",
+          "Is free education available for minors?"
+        ],
+        "responses": [
+          "Under the Right to Education (RTE) Act, 2009, children aged 6 to 14 years are entitled to free and compulsory education in India.",
+          "The RTE Act ensures no child is denied access to schooling due to economic or social reasons."
+        ]
+      },
+      {
+        "tag": "adoption_laws",
+        "patterns": [
+          "Can a minor child be adopted?",
+          "What are the laws for child adoption?",
+          "Who can adopt a child in India?"
+        ],
+        "responses": [
+          "Adoption is regulated under the Juvenile Justice (Care and Protection of Children) Act, 2015, and the Hindu Adoption and Maintenance Act, 1956. Prospective parents must meet eligibility criteria set by CARA (Central Adoption Resource Authority).",
+          "Adoption requires a legal process, including verifying the adoptive parents' suitability and ensuring the child's welfare."
+        ]
+      },
+      {
+        "tag": "child_marriage",
+        "patterns": [
+          "What is the legal age for marriage?",
+          "Is child marriage illegal?",
+          "How can child marriage be prevented?"
+        ],
+        "responses": [
+          "The legal age for marriage is 18 years for females and 21 years for males. Child marriage is prohibited under the Prohibition of Child Marriage Act, 2006.",
+          "Anyone can report a child marriage to authorities or Childline (1098) to intervene and stop the marriage."
+        ]
+      },
+      {
+        "tag": "minor_inheritance_rights",
+        "patterns": [
+          "Do minor children have inheritance rights?",
+          "Can a minor inherit property?",
+          "How are inheritance laws applied for children?"
+        ],
+        "responses": [
+          "Minor children have inheritance rights under personal laws like the Hindu Succession Act, 1956, or Muslim Personal Law. A guardian manages their inherited property until they turn 18.",
+          "Courts ensure that the inheritance serves the child's best interests and is not misused."
+        ]
+      },
+      {
+        "tag": "juvenile_laws",
+        "patterns": [
+          "What happens if a minor commits a crime?",
+          "What are juvenile laws in India?",
+          "How are minors treated under criminal law?"
+        ],
+        "responses": [
+          "Minors are treated under the Juvenile Justice (Care and Protection of Children) Act, 2015. Children below 18 are rehabilitated instead of being punished in most cases.",
+          "If a minor aged 16-18 commits a heinous offense, they may be tried as an adult based on the severity and nature of the crime."
+        ]
+      },
+      {
+        "tag": "healthcare_minors",
+        "patterns": [
+          "Do minors have access to free healthcare?",
+          "Can minors get health insurance?",
+          "What are the health rights for children?"
+        ],
+        "responses": [
+          "Children below 18 are entitled to free healthcare in government hospitals under various welfare schemes like the Rashtriya Bal Swasthya Karyakram (RBSK).",
+          "Minors can be covered under family health insurance plans, and vaccinations are provided free of cost in government clinics."
+        ]
+      },
+      {
+        "tag": "childline_services",
+        "patterns": [
+          "What is Childline?",
+          "How can I contact Childline?",
+          "What services does Childline provide?",
+          "What is child helpline number?"
+        ],
+        "responses": [
+          "Childline (1098) is a toll-free helpline for children in distress. It provides support for abuse, missing children, or any emergency involving minors.",
+          "You can call 1098 at any time to report issues related to children or seek assistance."
+        ]
+      },
+      {
+        "tag": "underage_drinking",
+        "patterns": [
+          "Is underage drinking illegal in India?",
+          "What happens if a minor is caught drinking alcohol?",
+          "Can a minor buy alcohol in India?"
+        ],
+        "responses": [
+          "Underage drinking is illegal in India, with the legal drinking age varying by state (e.g., 21 in Delhi, 25 in Maharashtra). Selling alcohol to minors is also prohibited under the Juvenile Justice Act, 2015.",
+          "If a minor is caught drinking, penalties can include fines and community service, and the seller may face legal action."
+        ]
+      },
+      {
+        "tag": "underage_driving",
+        "patterns": [
+          "Can a minor drive in India?",
+          "What is the punishment for underage driving?",
+          "What happens if a minor is caught driving?"
+        ],
+        "responses": [
+          "Underage driving is prohibited under the Motor Vehicles Act, 1988. A person must be 18 years old to obtain a driving license for a car or bike.",
+          "If a minor is caught driving, their parents or guardians can face fines up to ₹25,000 and imprisonment up to 3 years. The vehicle may also be impounded."
+        ]
+      },
+      {
+        "tag": "underage_smoking",
+        "patterns": [
+          "Is it illegal for minors to smoke?",
+          "What are the rules for selling tobacco to minors?",
+          "What happens if a minor is caught smoking?"
+        ],
+        "responses": [
+          "Selling tobacco to anyone under 18 is prohibited under the Cigarettes and Other Tobacco Products Act (COTPA), 2003. Smoking in public places is also punishable.",
+          "If a minor is caught smoking, fines can be imposed, and rehabilitation programs may be recommended."
+        ]
+      },
+      {
+        "tag": "underage_gambling",
+        "patterns": [
+          "Can minors participate in gambling?",
+          "What is the punishment for underage gambling?",
+          "Are there laws against minors gambling?"
+        ],
+        "responses": [
+          "Gambling is prohibited for minors under the Public Gambling Act, 1867. Online gambling platforms are also required to restrict access to minors.",
+          "If a minor is caught gambling, authorities may impose fines or involve juvenile justice mechanisms."
+        ]
+      },
+      {
+        "tag": "juvenile_offenses",
+        "patterns": [
+          "What happens if a minor commits a crime?",
+          "Are minors punished for crimes?",
+          "What laws handle offenses by juveniles?"
+        ],
+        "responses": [
+          "Juveniles committing offenses are handled under the Juvenile Justice (Care and Protection of Children) Act, 2015. Minors are rehabilitated rather than punished, except in heinous cases where 16-18-year-olds may be tried as adults.",
+          "The focus is on counseling, education, and reintegration into society for minor offenses."
+        ]
+      },
+      {
+        "tag": "fake_id_violations",
+        "patterns": [
+          "What happens if a minor uses a fake ID?",
+          "Is using fake ID illegal for minors?",
+          "What are the consequences of using fake ID?"
+        ],
+        "responses": [
+          "Using a fake ID is a punishable offense under the Indian Penal Code (IPC) Section 465 (Forgery). If caught, minors may face fines, and their guardians may also be held accountable.",
+          "Fake IDs for activities like buying alcohol or entering restricted places can lead to strict penalties."
+        ]
+      },
+      {
+        "tag": "curfew_violation",
+        "patterns": [
+          "Are there curfews for minors in India?",
+          "What happens if a minor violates curfew?",
+          "Is it illegal for minors to stay out late?"
+        ],
+        "responses": [
+          "India doesn't have nationwide curfews for minors, but some local laws may impose restrictions on loitering late at night.",
+          "Police may take minors into custody for their safety and inform their guardians, depending on the circumstances."
+        ]
+      },
+      {
+        "tag": "underage_possession",
+        "patterns": [
+          "Can minors own a vehicle?",
+          "Is it illegal for minors to carry weapons?",
+          "What happens if a minor is caught with illegal items?"
+        ],
+        "responses": [
+          "Minors cannot legally own vehicles or weapons. Possession of illegal items by a minor is a punishable offense under various laws, including the Arms Act, 1959, or the Narcotic Drugs and Psychotropic Substances Act, 1985.",
+          "Guardians may also be held responsible for negligence in such cases."
+        ]
+      },
+      {
+        "tag": "online_violations_minors",
+        "patterns": [
+          "What happens if a minor shares illegal content online?",
+          "Are there laws for minors committing cybercrimes?",
+          "Can a minor be punished for hacking?"
+        ],
+        "responses": [
+          "Under the Information Technology Act, 2000, minors involved in cybercrimes are dealt with under juvenile laws. Actions like sharing obscene content or hacking are punishable offenses.",
+          "The focus is on rehabilitation, but parents or guardians may also face consequences for negligence."
+        ]
+      },
+      {
+        "tag": "underage_sexual_conduct",
+        "patterns": [
+          "What happens if a minor engages in sexual activity?",
+          "What are the laws for minors and sexual consent?",
+          "Can minors be punished for consensual relationships?"
+        ],
+        "responses": [
+          "Sexual activity with or between minors is governed by the Protection of Children from Sexual Offenses (POCSO) Act, 2012. Even consensual relationships involving minors can lead to legal action.",
+          "Courts consider the circumstances, but the focus is on the child's welfare and protection."
+        ]
+      },
+      {
+        "tag": "decriminalization",
+        "patterns": [
+          "Is homosexuality legal in India?",
+          "What is the status of Section 377?",
+          "Is same-sex relationship allowed under Indian law?"
+        ],
+        "responses": [
+          "Homosexuality is legal in India since the Supreme Court's 2018 judgment decriminalizing Section 377 of the IPC. Consensual same-sex relationships are no longer a criminal offense.",
+          "The ruling emphasizes equal rights for LGBTQ individuals, ensuring protection under the Constitution."
+        ]
+      },
+      {
+        "tag": "marriage_rights",
+        "patterns": [
+          "Can LGBTQ couples marry in India?",
+          "Are same-sex marriages legally recognized?",
+          "What are the laws for same-sex marriage?"
+        ],
+        "responses": [
+          "Same-sex marriages are not yet legally recognized in India. The Special Marriage Act, 1954, and other personal laws currently apply only to heterosexual couples.",
+          "Activists continue to advocate for the legalization of same-sex marriages to ensure equal rights."
+        ]
+      },
+      {
+        "tag": "adoption_rights",
+        "patterns": [
+          "Can LGBTQ couples adopt children?",
+          "What are the adoption laws for LGBTQ people?",
+          "Are same-sex couples allowed to adopt?"
+        ],
+        "responses": [
+          "Adoption laws in India, governed by the Juvenile Justice Act and the CARA guidelines, do not explicitly allow adoption by same-sex couples. However, single LGBTQ individuals can adopt.",
+          "Advocacy for inclusive adoption laws is ongoing."
+        ]
+      },
+      {
+        "tag": "anti-discrimination",
+        "patterns": [
+          "Are there anti-discrimination laws for LGBTQ people?",
+          "What protects LGBTQ individuals from discrimination?",
+          "Can LGBTQ people face workplace discrimination?"
+        ],
+        "responses": [
+          "The Supreme Court's NALSA judgment (2014) and Navtej Singh Johar case (2018) protect LGBTQ individuals from discrimination. Employers and institutions are encouraged to ensure equal treatment.",
+          "Discrimination in workplaces or public spaces can be challenged under constitutional rights to equality and dignity."
+        ]
+      },
+      {
+        "tag": "transgender_rights",
+        "patterns": [
+          "What are the rights of transgender people?",
+          "Is there a law for transgender individuals in India?",
+          "How can transgender people get legal recognition?"
+        ],
+        "responses": [
+          "The Transgender Persons (Protection of Rights) Act, 2019, provides rights to self-identify, prohibits discrimination, and ensures access to education, healthcare, and employment for transgender individuals.",
+          "The Act allows transgender people to apply for certificates to affirm their identity legally."
+        ]
+      },
+      {
+        "tag": "mental_health_support",
+        "patterns": [
+          "What mental health laws protect LGBTQ people?",
+          "Is conversion therapy illegal in India?",
+          "Can LGBTQ people seek mental health support?"
+        ],
+        "responses": [
+          "The Mental Healthcare Act, 2017, ensures LGBTQ individuals' rights to mental health treatment without discrimination. Conversion therapy is unethical and has been banned by the National Medical Commission.",
+          "LGBTQ individuals are encouraged to seek inclusive and affirming mental health services."
+        ]
+      },
+      {
+        "tag": "lgbtq_inheritance_rights",
+        "patterns": [
+          "Do LGBTQ people have inheritance rights?",
+          "Can LGBTQ partners inherit property?",
+          "What are the property rights for same-sex couples?"
+        ],
+        "responses": [
+          "Indian inheritance laws currently do not recognize same-sex partnerships for joint property or inheritance under personal laws.",
+          "However, LGBTQ individuals can ensure inheritance through wills or other legal agreements."
+        ]
+      },
+      {
+        "tag": "workplace_inclusion",
+        "patterns": [
+          "What laws protect LGBTQ employees?",
+          "Are workplaces inclusive of LGBTQ people?",
+          "Can LGBTQ people face harassment at work?"
+        ],
+        "responses": [
+          "The Vishaka Guidelines and POSH Act can be extended to protect LGBTQ individuals from workplace harassment. Organizations are encouraged to adopt policies for LGBTQ inclusion.",
+          "Many private companies have inclusive practices, but there is no comprehensive law mandating workplace protection for LGBTQ employees."
+        ]
+      },
+      {
+        "tag": "hate_crime_protection",
+        "patterns": [
+          "Are there laws against hate crimes for LGBTQ?",
+          "What happens in cases of violence against LGBTQ people?",
+          "How are hate crimes against LGBTQ addressed?"
+        ],
+        "responses": [
+          "India does not have specific laws against hate crimes targeting LGBTQ individuals, but general provisions under the IPC (e.g., Section 295A, 153A) can be invoked.",
+          "Advocacy for stronger hate crime protections continues to be a priority for LGBTQ rights groups."
+        ]
+      },
+      {
+        "tag": "education_inclusion",
+        "patterns": [
+          "Are schools inclusive of LGBTQ students?",
+          "Can LGBTQ students face discrimination?",
+          "What are the rights of LGBTQ students?"
+        ],
+        "responses": [
+          "The Right to Education Act ensures non-discrimination in schools, and the NALSA judgment emphasizes equality for transgender and LGBTQ students.",
+          "Schools are encouraged to adopt inclusive curriculums and anti-bullying policies to support LGBTQ students."
+        ]
+      },
+      {
+        "tag": "consumer_complaint",
+        "patterns": [
+            "How can I file a consumer complaint?",
+            "Steps to raise a complaint under Consumer Protection Act",
+            "Where to report unfair trade practices?"
+        ],
+        "responses": [
+            "You can file a consumer complaint through the National Consumer Helpline or in a District Consumer Dispute Redressal Forum.",
+            "Unfair trade practices can be reported to local consumer protection authorities or online on the Consumer Helpline portal."
+        ]
+    },
+    {
+        "tag": "ecommerce_issues",
+        "patterns": [
+            "What to do if I get a defective product online?",
+            "Can I return goods purchased online?",
+            "Steps to claim refund for online shopping issues"
+        ],
+        "responses": [
+            "For defective or incorrect products, contact the seller or platform under their return policy. You can escalate to a consumer court if unresolved."
+        ]
+    },
+    {
+        "tag": "consumer_rights",
+        "patterns": [
+            "What are my rights as a consumer?",
+            "Can I refuse to pay for a faulty product?",
+            "Am I protected against misleading advertisements?"
+        ],
+        "responses": [
+            "Consumers are protected under the Consumer Protection Act, 2019. Key rights include the right to safety, information, redressal, and consumer education."
+        ]
+    },
+    {
+        "tag": "false_advertising",
+        "patterns": [
+            "Can I sue for false advertising?",
+            "What action can be taken against deceptive ads?",
+            "What are my rights if misled by an advertisement?"
+        ],
+        "responses": [
+            "Under the Consumer Protection Act, you can file a complaint against false advertising with the Advertising Standards Council of India or a consumer forum."
+        ]
+    },
+    {
+        "tag": "pollution_complaint",
+        "patterns": [
+            "How to file a complaint about pollution?",
+            "Who handles cases of environmental violations?",
+            "What to do if someone is polluting the environment?"
+        ],
+        "responses": [
+            "You can report pollution to the State Pollution Control Board or use the Central Pollution Control Board's online grievance portal."
+        ]
+    },
+    {
+        "tag": "wildlife_protection",
+        "patterns": [
+            "What does the Wildlife Protection Act do?",
+            "Can I report illegal hunting or poaching?",
+            "What are the laws to protect endangered species?"
+        ],
+        "responses": [
+            "The Wildlife Protection Act, 1972, prohibits illegal hunting and protects endangered species. Report poaching to the Wildlife Crime Control Bureau or local forest department."
+        ]
+    },
+    {
+        "tag": "climate_change_violations",
+        "patterns": [
+            "Are there penalties for climate change violations?",
+            "What happens if industries exceed pollution limits?",
+            "What are the laws to curb greenhouse gas emissions?"
+        ],
+        "responses": [
+            "The Environment Protection Act, 1986, enforces penalties for violating environmental norms, including fines, closure of units, and imprisonment."
+        ]
+    },
+    {
+        "tag": "forest_conservation",
+        "patterns": [
+            "How does the Forest Conservation Act work?",
+            "Can deforestation be reported?",
+            "What are the penalties for illegal tree cutting?"
+        ],
+        "responses": [
+            "Under the Forest Conservation Act, 1980, illegal deforestation can result in heavy fines and imprisonment. Report cases to the local forest department or a green tribunal."
+        ]
+    },
+    {
+        "tag": "ipr_filing",
+        "patterns": [
+            "How to file a copyright?",
+            "Steps to apply for a trademark",
+            "Can I patent my idea in India?"
+        ],
+        "responses": [
+            "To file a copyright, you can apply online through the Copyright Office portal. For trademarks and patents, use the IP India website."
+        ]
+    },
+    {
+        "tag": "ipr_infringement",
+        "patterns": [
+            "What to do if someone violates my copyright?",
+            "How to handle trademark disputes?",
+            "What is the remedy for patent infringement?"
+        ],
+        "responses": [
+            "You can send a cease-and-desist notice or file a suit in an Intellectual Property Appellate Board or civil court for infringement."
+        ]
+    },
+    {
+        "tag": "trademark_protection",
+        "patterns": [
+            "How can I protect my brand name?",
+            "What steps are involved in registering a trademark?",
+            "Can someone use my logo without permission?"
+        ],
+        "responses": [
+            "Trademark registration protects your brand and logo. File through the IP India website and monitor for unauthorized use."
+        ]
+    },
+    {
+        "tag": "piracy_cases",
+        "patterns": [
+            "What actions can I take against piracy?",
+            "Can I report someone selling pirated software?",
+            "What are the penalties for piracy in India?"
+        ],
+        "responses": [
+            "Under the Copyright Act, 1957, piracy is punishable with fines and imprisonment. Report cases to local authorities or cybercrime cells."
+        ]
+    },
+    {
+        "tag": "income_tax",
+        "patterns": [
+            "What is the income tax slab in India?",
+            "How much tax do I pay for my salary?",
+            "What are the rules for income tax filing?"
+        ],
+        "responses": [
+            "Income tax slabs vary by income level and age group. Refer to the latest government guidelines for specifics. Filing is mandatory for taxable income."
+        ]
+    },
+    {
+        "tag": "tax_filing",
+        "patterns": [
+            "How do I file my taxes online?",
+            "What documents are required for tax returns?",
+            "Where can I check my income tax filing status?"
+        ],
+        "responses": [
+            "You can file your taxes online through the Income Tax e-filing portal using documents like PAN, Form 16, and investment proofs."
+        ]
+    },
+    {
+        "tag": "gst_compliance",
+        "patterns": [
+            "What is GST and how does it work?",
+            "Who needs to register for GST in India?",
+            "Can I claim GST refunds?"
+        ],
+        "responses": [
+            "GST (Goods and Services Tax) is a unified tax on goods and services. Registration is mandatory for businesses exceeding turnover limits."
+        ]
+    },
+    {
+        "tag": "tax_evaders",
+        "patterns": [
+            "How to report tax evasion?",
+            "What are the penalties for not paying taxes?",
+            "Can I report someone hiding income?"
+        ],
+        "responses": [
+            "Tax evasion can be reported to the Income Tax Department using their online portal or through local authorities. Penalties include fines and prosecution."
+        ]
+    },
+    {
+        "tag": "discrimination_cases",
+        "patterns": [
+            "How do I report workplace discrimination?",
+            "What laws protect against caste-based discrimination?",
+            "What can I do if I'm denied access due to my caste?"
+        ],
+        "responses": [
+            "Discrimination cases can be reported under the SC/ST (Prevention of Atrocities) Act or to the National Commission for Scheduled Castes."
+        ]
+    },
+    {
+        "tag": "rights_violation",
+        "patterns": [
+            "Who protects human rights in India?",
+            "Where to file a complaint for human rights abuse?",
+            "What is the role of the National Human Rights Commission?"
+        ],
+        "responses": [
+            "The National Human Rights Commission (NHRC) addresses human rights violations. File complaints on their website or in person."
+        ]
+    },
+    {
+        "tag": "reservations",
+        "patterns": [
+            "What are the reservation policies in India?",
+            "Who qualifies for SC/ST/OBC reservations?",
+            "How does the reservation system work?"
+        ],
+        "responses": [
+            "Reservation policies provide quotas in education, jobs, and legislatures for SC/ST/OBCs under various constitutional provisions."
+        ]
+    },
+    {
+        "tag": "minorities_rights",
+        "patterns": [
+            "What are the rights of religious minorities?",
+            "Which laws protect minority communities?",
+            "Can minorities seek government scholarships?"
+        ],
+        "responses": [
+            "Religious minorities are protected under Article 29 and 30 of the Indian Constitution. Scholarships and welfare schemes are available for eligible individuals."
+        ]
+    },
+    {
+        "tag": "marriage_laws",
+        "patterns": [
+            "What are the requirements for registering a marriage?",
+            "Can I marry under a different religion in India?",
+            "What is the process for interfaith marriage?"
+        ],
+        "responses": [
+            "Marriage registration varies by laws like the Hindu Marriage Act or Special Marriage Act for interfaith unions. Apply at local registrars."
+        ]
+    },    
+    {
+        "tag": "adoption",
+        "patterns": [
+            "What are the laws for adopting a child in India?",
+            "Who can adopt under Indian law?",
+            "What is the process for legal adoption?"
+        ],
+        "responses": [
+            "Adoption is governed by the Juvenile Justice Act and Hindu Adoption and Maintenance Act. Apply through CARA (Central Adoption Resource Authority)."
+        ]
+    },
+    {
+        "tag": "medical_negligence",
+        "patterns": [
+            "What is medical negligence?",
+            "How do I file a case for medical malpractice?",
+            "Can I sue a hospital for negligence?"
+        ],
+        "responses": [
+            "Medical negligence cases can be filed under the Consumer Protection Act or Indian Penal Code. Consult a legal expert for filing details."
+        ]
+    },
+    {
+        "tag": "healthcare_rights",
+        "patterns": [
+            "What are my rights as a patient in India?",
+            "Can I get free treatment in government hospitals?",
+            "Who ensures quality healthcare in India?"
+        ],
+        "responses": [
+            "Patients have rights like informed consent and free emergency care. Contact the National Health Mission or patient grievance forums for complaints."
+        ]
+    },
+    {
+        "tag": "mental_health",
+        "patterns": [
+            "What are the laws for mental health care in India?",
+            "Can I seek free counseling for mental health?",
+            "Who to approach for mental health issues?"
+        ],
+        "responses": [
+            "The Mental Healthcare Act, 2017, ensures rights to treatment and dignity for mental health patients. Visit government-run clinics for free services."
+        ]
+    },
+    {
+        "tag": "health_insurance",
+        "patterns": [
+            "What happens if my health insurance claim is denied?",
+            "How to file a complaint against an insurance company?",
+            "Are there free health insurance schemes in India?"
+        ],
+        "responses": [
+            "Denied claims can be escalated to the Insurance Ombudsman. Free schemes like Ayushman Bharat offer health coverage to eligible individuals."
+        ]
+    },
+    {
+        "tag": "education_schemes",
+        "patterns": [
+            "What are government education schemes for girls?",
+            "Are there scholarships for underprivileged children?",
+            "How can I apply for school scholarships?"
+        ],
+        "responses": [
+            "Schemes like Beti Bachao Beti Padhao and Pre-Matric Scholarships support education for underprivileged children. Check eligibility online or at local education offices."
+        ]
+    },
+    {
+        "tag": "grievance_redressal",
+        "patterns": [
+            "Where to complain about school issues?",
+            "What to do if a school denies admission?",
+            "Who to contact for unfair school practices?"
+        ],
+        "responses": [
+            "For issues with schools, approach the district education officer or file complaints under the RTE grievance cell."
+        ]
+    },
+    {
+        "tag": "special_education",
+        "patterns": [
+            "What are the rights of children with disabilities in education?",
+            "Are schools required to admit disabled children?",
+            "How to get resources for special education?"
+        ],
+        "responses": [
+            "Under the Rights of Persons with Disabilities Act, schools must ensure inclusive education for disabled children. Contact the National Institute of Open Schooling (NIOS)."
+        ]
+    },
+    {
+        "tag": "tenant_rights",
+        "patterns": [
+            "What are my rights as a tenant?",
+            "Can a landlord evict without notice?",
+            "What can I do if my landlord violates the rental agreement?"
+        ],
+        "responses": [
+            "Tenants are protected under the Rent Control Act. Landlords cannot evict without due process. File disputes with the rent authority if needed."
+        ]
+    },
+    {
+        "tag": "builder_delays",
+        "patterns": [
+            "What can I do if a builder delays my flat possession?",
+            "Are there laws against delayed housing projects?",
+            "Where to complain about a builder?"
+        ],
+        "responses": [
+            "Report delays to the Real Estate Regulatory Authority (RERA) under the RERA Act. Seek compensation or refunds through consumer courts."
+        ]
+    },
+    {
+        "tag": "inheritance_rights",
+        "patterns": [
+            "What are inheritance laws in India?",
+            "How is property divided among heirs?",
+            "Do daughters have equal rights in inheritance?"
+        ],
+        "responses": [
+            "Inheritance is governed by laws like the Hindu Succession Act, ensuring equal rights for daughters and sons in ancestral property."
+        ]
+    },
+    {
+        "tag": "minimum_wages",
+        "patterns": [
+            "What is the minimum wage in India?",
+            "Who decides minimum wages for workers?",
+            "What to do if I'm paid below the minimum wage?"
+        ],
+        "responses": [
+            "The Minimum Wages Act ensures fair wages for workers. File complaints with the labor commissioner if employers violate the law."
+        ]
+    },
+    {
+        "tag": "working_hours",
+        "patterns": [
+            "What are the legal working hours in India?",
+            "Can my employer force me to work overtime?",
+            "What is the rule for weekly holidays?"
+        ],
+        "responses": [
+            "Under the Factories Act, working hours are capped at 8 hours a day, with weekly holidays. Overtime must be compensated appropriately."
+        ]
+    },
+    {
+        "tag": "employee_termination",
+        "patterns": [
+            "Can an employer terminate without notice?",
+            "What to do if I’m wrongfully terminated?",
+            "Are there laws protecting workers from unfair dismissal?"
+        ],
+        "responses": [
+            "Unfair termination is protected under the Industrial Disputes Act. Seek help from labor courts or unions if terminated unlawfully."
+        ]
+    },
+    {
+        "tag": "employee_benefits",
+        "patterns": [
+            "What benefits are mandatory for employees?",
+            "Who is eligible for gratuity in India?",
+            "What is the rule for paid maternity leave?"
+        ],
+        "responses": [
+            "Benefits like gratuity, provident fund, and maternity leave are mandatory under acts like the Maternity Benefit Act and EPF Act."
+        ]
+    },
+    {
+        "tag": "consumer_complaints",
+        "patterns": [
+            "Where can I file a consumer complaint?",
+            "How to report faulty products?",
+            "Who to contact for poor service?"
+        ],
+        "responses": [
+            "Consumer complaints can be filed under the Consumer Protection Act via local consumer forums or the National Consumer Helpline."
+        ]
+    },
+    {
+        "tag": "online_shopping_issues",
+        "patterns": [
+            "What to do if I get a wrong product online?",
+            "Can I return a damaged item from an e-commerce site?",
+            "Who to contact for a refund issue online?"
+        ],
+        "responses": [
+            "For online shopping issues, contact the e-commerce site's grievance officer or file a complaint at www.consumerhelpline.gov.in."
+        ]
+    },
+    {
+        "tag": "unfair_trade_practices",
+        "patterns": [
+            "What are unfair trade practices?",
+            "Is false advertising illegal?",
+            "Where to complain about misleading ads?"
+        ],
+        "responses": [
+            "Unfair trade practices like false advertising are punishable under the Consumer Protection Act. Report them to the consumer forum or advertising standards council."
+        ]
+    },
+    {
+        "tag": "product_warranty",
+        "patterns": [
+            "Can I claim a warranty for a defective product?",
+            "What to do if a seller refuses to honor a warranty?",
+            "Are warranties legally enforceable?"
+        ],
+        "responses": [
+            "Product warranties are enforceable under the Consumer Protection Act. File a complaint if a seller refuses to honor it."
+        ]
+    },
+    {
+        "tag": "legal_abortion_rights",
+        "patterns": [
+            "Is abortion legal in India?",
+            "What are the laws regarding abortion?",
+            "Can I terminate a pregnancy legally?"
+        ],
+        "responses": [
+            "Abortion in India is legal under the Medical Termination of Pregnancy (MTP) Act, up to 24 weeks of pregnancy under specific conditions."
+        ]
+    },
+    {
+        "tag": "abortion_without_consent",
+        "patterns": [
+            "Can abortion happen without my consent?",
+            "Is it illegal to force someone to have an abortion?",
+            "What if someone performs an abortion without my agreement?"
+        ],
+        "responses": [
+            "Forced abortion without the woman's consent is a criminal offense under Indian law. Victims can file a complaint under the IPC."
+        ]
+    },
+    {
+        "tag": "minors_and_abortion",
+        "patterns": [
+            "Can minors get an abortion?",
+            "What are the rules for abortion if under 18?",
+            "Do minors need parental consent for abortion?"
+        ],
+        "responses": [
+            "For minors, abortion requires parental consent or permission from a court under the MTP Act."
+        ]
+    },
+    {
+        "tag": "abortion_and_healthcare",
+        "patterns": [
+            "Where can I go for a safe abortion?",
+            "Are all hospitals allowed to perform abortions?",
+            "Can private clinics offer abortion services?"
+        ],
+        "responses": [
+            "Abortions can only be performed in government-approved healthcare facilities by qualified doctors as per the MTP Act."
+        ]
+    },
+    {
+        "tag": "reporting_rape",
+        "patterns": [
+            "How can I report a rape?",
+            "Where to file a complaint for rape?",
+            "Who can I approach in case of sexual assault?"
+        ],
+        "responses": [
+            "Rape complaints can be filed at the nearest police station or online. The victim has the right to be attended by a female officer."
+        ]
+    },
+    {
+        "tag": "legal_provisions_rape",
+        "patterns": [
+            "What are the laws against rape in India?",
+            "Which IPC section deals with rape?",
+            "What punishment is given for rape?"
+        ],
+        "responses": [
+            "Rape is punishable under Section 375 and Section 376 of the Indian Penal Code. Punishment ranges from 7 years to life imprisonment, depending on the severity."
+        ]
+    },
+    {
+        "tag": "rape_and_medical_exam",
+        "patterns": [
+            "Is medical examination mandatory for rape victims?",
+            "How is a medical exam conducted for rape cases?",
+            "Can I refuse a medical exam after reporting rape?"
+        ],
+        "responses": [
+            "A medical examination is crucial for evidence collection in rape cases. It must be conducted with the victim's consent and privacy."
+        ]
+    },
+    {
+        "tag": "protection_for_victims",
+        "patterns": [
+            "Are there laws to protect rape victims?",
+            "What help can victims of sexual assault get?",
+            "Are rape victims entitled to counseling?"
+        ],
+        "responses": [
+            "Rape victims are entitled to legal aid, counseling, and protection under the Criminal Law Amendment Act and other victim protection programs."
+        ]
+    },
+    {
+        "tag": "civil_vs_criminal_cases",
+        "patterns": [
+          "What is the difference between civil and criminal cases?",
+          "How are civil cases different from criminal cases?",
+          "Explain civil and criminal cases in simple terms."
+        ],
+        "responses": [
+          "Civil cases deal with disputes between individuals or organizations, such as property disputes, contracts, or family issues. Criminal cases involve actions that are considered offenses against the state or public, such as theft, assault, or murder."
+        ]
+      },
+      {
+        "tag": "filing_appeal",
+        "patterns": [
+          "How can I appeal in a higher court?",
+          "What is the process to file an appeal?",
+          "Can I challenge a lower court's decision?"
+        ],
+        "responses": [
+          "To file an appeal, you need to submit an application to the higher court along with a copy of the lower court's judgment, grounds for appeal, and relevant documents. Ensure you file it within the prescribed time frame."
+        ]
+      },
+      {
+        "tag": "powers_of_courts",
+        "patterns": [
+          "What powers does the Supreme Court have?",
+          "What is the role of High Courts in India?",
+          "Explain the powers of the Supreme and High Courts."
+        ],
+        "responses": [
+          "The Supreme Court has the power to interpret the Constitution, resolve disputes between states and the center, and review cases under its appellate jurisdiction. High Courts handle state-level legal matters, including writ petitions and appeals from lower courts."
+        ]
+      },
+      {
+        "tag": "acquiring_citizenship",
+        "patterns": [
+          "How can I acquire Indian citizenship?",
+          "What are the rules for getting Indian citizenship?",
+          "Explain the process to become an Indian citizen."
+        ],
+        "responses": [
+          "Indian citizenship can be acquired by birth, descent, registration, or naturalization under the Citizenship Act, 1955. Each method has specific criteria, such as residency requirements or parental citizenship."
+        ]
+      },
+      {
+        "tag": "voter_registration",
+        "patterns": [
+          "How can I register as a voter in India?",
+          "What is the process for voter ID registration?",
+          "How do I update my voter ID details?"
+        ],
+        "responses": [
+          "You can register for a voter ID online via the National Voter Service Portal or offline by submitting Form 6 to your nearest Electoral Office. Updating details requires filling Form 8 on the same portal."
+        ]
+      },
+      {
+        "tag": "voting_rights_for_NRIs",
+        "patterns": [
+          "Can NRIs vote in Indian elections?",
+          "What are the voting rights for NRIs?",
+          "Explain the rules for NRIs to vote in India."
+        ],
+        "responses": [
+          "NRIs can vote in Indian elections, but they need to register as an overseas voter (Form 6A) and be physically present in their constituency on the day of voting."
+        ]
+      },
+      {
+        "tag": "apply_for_aadhaar",
+        "patterns": [
+          "How can I apply for an Aadhaar card?",
+          "What is the process to get an Aadhaar?",
+          "Where can I enroll for an Aadhaar card?"
+        ],
+        "responses": [
+          "To apply for an Aadhaar card, visit an authorized Aadhaar Enrollment Center with proof of identity and address. Fill out the application form, provide biometrics (fingerprints and iris scan), and receive an acknowledgment slip. Your Aadhaar number will be issued after verification."
+        ]
+      },
+      {
+        "tag": "update_aadhaar_details",
+        "patterns": [
+          "How do I update my details in Aadhaar?",
+          "What is the process for changing my Aadhaar address?",
+          "Can I update my mobile number in Aadhaar?"
+        ],
+        "responses": [
+          "To update Aadhaar details, visit the UIDAI website or an Aadhaar Enrollment Center. Submit the update request with necessary documents for verification. Some updates, like mobile number or biometrics, can only be done at the center."
+        ]
+      },
+      {
+        "tag": "lost_aadhaar_card",
+        "patterns": [
+          "What should I do if I lose my Aadhaar card?",
+          "Can I get a duplicate Aadhaar card?",
+          "How to retrieve my lost Aadhaar number?"
+        ],
+        "responses": [
+          "If you lose your Aadhaar card, you can download an e-Aadhaar from the UIDAI website using your Aadhaar number or enrollment ID. Alternatively, you can request a reprint of the card online."
+        ]
+      },
+      {
+        "tag": "apply_for_passport",
+        "patterns": [
+          "How can I apply for a passport?",
+          "What is the process to get a new passport?",
+          "Where do I apply for an Indian passport?"
+        ],
+        "responses": [
+          "To apply for an Indian passport, visit the Passport Seva Portal, fill out the application form, pay the fee, and book an appointment at your nearest Passport Seva Kendra (PSK). Carry original documents for verification."
+        ]
+      },
+      {
+        "tag": "passport_renewal",
+        "patterns": [
+          "How do I renew my passport?",
+          "What is the process to renew an expired passport?",
+          "Can I renew my passport online?"
+        ],
+        "responses": [
+          "To renew your passport, log in to the Passport Seva Portal, submit the renewal application form, pay the fee, and schedule an appointment at the PSK. Bring your old passport and required documents for verification."
+        ]
+      },
+      {
+        "tag": "lost_passport",
+        "patterns": [
+          "What should I do if I lose my passport?",
+          "How can I get a duplicate passport?",
+          "What are the steps if my passport is lost?"
+        ],
+        "responses": [
+          "If your passport is lost, file an FIR at the nearest police station, then submit a 'Re-issue' application on the Passport Seva Portal. You'll need a copy of the FIR, old passport details (if available), and identity proof."
+        ]
+      },
+      {
+        "tag": "aadhaar_linking",
+        "patterns": [
+          "Is it mandatory to link Aadhaar to my bank account?",
+          "How do I link Aadhaar with my PAN card?",
+          "What services require Aadhaar linking?"
+        ],
+        "responses": [
+          "Linking Aadhaar to your bank account, PAN card, or other services can often be done online via respective portals. Some linkages, like Aadhaar-PAN, are mandatory for tax purposes in India."
+        ]
+      },
+      {
+        "tag": "identity_proof",
+        "patterns": [
+          "What documents are accepted as identity proof in India?",
+          "Is Aadhaar card a valid ID proof?",
+          "Can I use my PAN card as proof of identity?"
+        ],
+        "responses": [
+          "Common identity proofs in India include Aadhaar card, PAN card, Voter ID, passport, and driving license. Their acceptance depends on the purpose, like opening a bank account, applying for government services, etc."
+        ]
+      },
+      {
+        "tag": "what_is_bail",
+        "patterns": [
+          "What is bail?",
+          "Can you explain the term bail?",
+          "What does bail mean in legal terms?"
+        ],
+        "responses": [
+          "Bail is a legal mechanism that allows an accused person to be released from custody, typically by providing a monetary guarantee, ensuring their appearance in court when required."
+        ]
+      },
+      {
+        "tag": "what_is_contempt_of_court",
+        "patterns": [
+          "What is contempt of court?",
+          "Explain the term contempt of court",
+          "What does it mean to be in contempt of court?"
+        ],
+        "responses": [
+          "Contempt of court refers to actions that disrespect or disobey the authority, justice, and dignity of the court, such as refusing to follow court orders or disrupting court proceedings."
+        ]
+      },
+      {
+        "tag": "what_are_fundamental_rights",
+        "patterns": [
+          "What are fundamental rights?",
+          "Explain fundamental rights in India",
+          "What are the basic rights guaranteed by the Indian Constitution?"
+        ],
+        "responses": [
+          "Fundamental rights are basic human rights guaranteed by the Constitution of India. They include rights to equality, freedom, against exploitation, to religious freedom, cultural and educational rights, and constitutional remedies."
+        ]
+      },
+      {
+        "tag": "what_is_cognizable_offense",
+        "patterns": [
+          "What is a cognizable offense?",
+          "Explain the term cognizable offense",
+          "What does cognizable offense mean?"
+        ],
+        "responses": [
+          "A cognizable offense is a crime for which the police have the authority to make an arrest without a warrant and to start an investigation with or without the permission of a court."
+        ]
+      },
+      {
+        "tag": "what_is_bailable_offense",
+        "patterns": [
+          "What is a bailable offense?",
+          "Explain the term bailable offense",
+          "What does bailable offense mean?"
+        ],
+        "responses": [
+          "A bailable offense is one in which the accused has the legal right to be released on bail after providing a surety or meeting specific conditions."
+        ]
+      },
+      {
+        "tag": "what_is_non_bailable_offense",
+        "patterns": [
+          "What is a non-bailable offense?",
+          "Explain the term non-bailable offense",
+          "What does non-bailable offense mean?"
+        ],
+        "responses": [
+          "A non-bailable offense is one in which bail is not granted automatically, and the decision rests with the court. Examples include murder, rape, and kidnapping."
+        ]
+      },
+      {
+        "tag": "what_is_arrest_warrant",
+        "patterns": [
+          "What is an arrest warrant?",
+          "Can you explain the term arrest warrant?",
+          "What does arrest warrant mean?"
+        ],
+        "responses": [
+          "An arrest warrant is a legal document issued by a court authorizing the police to arrest a specific individual in connection with a crime."
+        ]
+      },
+      {
+        "tag": "what_is_plea_bargaining",
+        "patterns": [
+          "What is plea bargaining?",
+          "Explain the term plea bargaining",
+          "What does plea bargaining mean?"
+        ],
+        "responses": [
+          "Plea bargaining is a legal process where the accused agrees to plead guilty to a lesser charge or a lighter sentence in exchange for concessions from the prosecution."
+        ]
+      },
+      {
+        "tag": "what_is_acquittal",
+        "patterns": [
+          "What is an acquittal?",
+          "Explain the term acquittal",
+          "What does acquittal mean in court?"
+        ],
+        "responses": [
+          "Acquittal refers to a court's judgment that an accused person is not guilty of the charges against them, resulting in their release from the case."
+        ]
+      },
+      {
+        "tag": "what_is_statute_of_limitations",
+        "patterns": [
+          "What is the statute of limitations?",
+          "Can you explain the term statute of limitations?",
+          "What does statute of limitations mean?"
+        ],
+        "responses": [
+          "The statute of limitations refers to the maximum time period within which legal proceedings must be initiated after an offense has occurred."
+        ]
+      },
+      {
+        "tag": "what_is_probation",
+        "patterns": [
+          "What is probation?",
+          "Explain the term probation",
+          "What does probation mean in law?"
+        ],
+        "responses": [
+          "Probation is a court-imposed alternative to imprisonment, allowing the convicted individual to remain in the community under supervision, with certain conditions they must follow."
+        ]
+      },
+      {
+        "tag": "what_is_defamation",
+        "patterns": [
+          "What is defamation?",
+          "Explain the term defamation",
+          "What does defamation mean?"
+        ],
+        "responses": [
+          "Defamation is the act of harming someone's reputation by making false and damaging statements, either in written form (libel) or spoken form (slander)."
+        ]
+      },
+      {
+        "tag": "what_is_mediation",
+        "patterns": [
+          "What is mediation?",
+          "Can you explain mediation?",
+          "What does mediation mean in law?"
+        ],
+        "responses": [
+          "Mediation is a form of alternative dispute resolution where an impartial third party helps conflicting parties reach a mutually acceptable agreement without going to court."
+        ]
+      },
+      {
+        "tag": "what_is_subpoena",
+        "patterns": [
+          "What is a subpoena?",
+          "Explain the term subpoena",
+          "What does subpoena mean?"
+        ],
+        "responses": [
+          "A subpoena is a legal document issued by a court that requires a person to appear in court or produce evidence for a case."
+        ]
+      },
+      {
+        "tag": "what_is_double_jeopardy",
+        "patterns": [
+          "What is double jeopardy?",
+          "Explain double jeopardy",
+          "What does double jeopardy mean in law?"
+        ],
+        "responses": [
+          "Double jeopardy is a legal principle that prevents an individual from being tried twice for the same offense after being acquitted or convicted."
+        ]
+      }
+                   
+    ]
+  }

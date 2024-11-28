@@ -1,0 +1,274 @@
+{"intents": [
+  {"tag": "greeting",
+    "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hey", "greetings","Yo"],
+    "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?","Yo broo!!! Hows You"],
+    "context_set": ""
+  },
+  {"tag": "goodbye",
+    "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye", "cao", "see ya"],
+    "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+    "context_set": ""
+  },
+ 
+  {"tag": "how",
+    "patterns": ["How are you?", "How is your day?", "How do you feel?", "Are you good?"],
+    "responses": ["I am fine, thanks for asking!", "I feel great!","I am feeling good and feeling great!"],
+    "context_set": ""
+  },
+  {
+    "tag": "thanks_reply",
+    "patterns": ["Thanks", "Thank you", "Thanks a lot", "I appreciate it", "Many thanks", "Much appreciated", "Thanks a bunch", "Thank you so much"],
+    "responses": ["You're welcome!", "Glad I could help!", "No problem, happy to assist!", "You're most welcome!", "It was my pleasure!", "Anytime!", "No worries, I'm here for you!", "Happy to help!", "Don't mention it!"],
+    "context_set": ""
+  },
+  
+  
+  {
+    "tag": "constitution_law",
+    "patterns": ["What are fundamental rights?", "Tell me about fundamental duties.", "What is the Indian Constitution?"],
+    "responses": ["The Constitution of India is the supreme law of India. It lays down the framework defining fundamental political principles, establishes the structure, procedures, powers, and duties of government institutions, and sets out fundamental rights, directive principles, and the duties of citizens."],
+    "context_set": ""
+  },
+  {
+    "tag": "criminal_law_fir",
+    "patterns": ["What is an FIR?", "Explain FIR", "What does FIR mean?", "What is the meaning of FIR?","FIR"],
+    "responses": ["An FIR is a First Information Report, the initial step in criminal proceedings. It can be lodged at any police station, either by the victim or a witness to the crime."],
+    "context_set": ""
+  },
+  {
+    "tag": "criminal_law_file_fir",
+    "patterns": ["How to file an FIR?", "What is the process for filing an FIR?", "How can I file an FIR?", "What is the procedure to file an FIR?","file FIR"],
+    "responses": ["To file an FIR, go to the nearest police station and provide details of the crime. You must include information like the time, place, and nature of the offense. The police will register your complaint and issue a copy of the FIR."],
+    "context_set": ""
+  },
+  {
+    "tag": "criminal_law_ipc",
+    "patterns": ["Tell me about IPC", "What is IPC?", "Explain IPC", "What is the Indian Penal Code?", "What is the full form of IPC?","IPC"],
+    "responses": ["The IPC, or Indian Penal Code, is the official criminal code of India. It covers all substantive aspects of criminal law and outlines the various offenses and penalties."],
+    "context_set": ""
+  },
+  {
+    "tag": "criminal_law_bail",
+    "patterns": ["What is bail?", "Explain bail", "How does bail work?", "What are bail laws in India?","bail"],
+    "responses": ["Bail is the temporary release of an accused person awaiting trial. It allows the accused to remain free while legal proceedings are ongoing, typically under certain conditions set by the court."],
+    "context_set": ""
+  },
+  {
+    "tag": "criminal_law_arrest",
+    "patterns": ["What happens during an arrest?", "Tell me about the arrest process", "What are my rights if I am arrested?", "How does an arrest work?","arrest","arrest info"],
+    "responses": ["During an arrest, the police take an individual into custody if they suspect them of committing a crime. The person has the right to know the charges, remain silent, and consult with a lawyer."],
+    "context_set": ""
+  },
+  {
+    "tag": "criminal_law_remand",
+    "patterns": ["What is police remand?", "What happens during remand?", "How long is remand?", "What does remand mean?","remand"],
+    "responses": ["Police remand refers to the period when the accused is in police custody for interrogation and investigation purposes. It is generally granted by a court for a limited time."],
+    "context_set": ""
+  },
+  {
+    "tag": "criminal_law_warrant",
+    "patterns": ["What is an arrest warrant?", "Tell me about arrest warrants", "What does an arrest warrant mean?", "How is an arrest warrant issued?","warrant"],
+    "responses": ["An arrest warrant is a legal document issued by a court that authorizes the police to arrest a specific individual. It is issued when there is sufficient evidence or suspicion of a crime."],
+    "context_set": ""
+  },
+  {
+    "tag": "criminal_law_charge_sheet",
+    "patterns": ["What is a charge sheet?", "What does charge sheet mean?", "Tell me about charge sheets", "How is a charge sheet filed?","charge sheet"],
+    "responses": ["A charge sheet is a formal document of accusation prepared by law enforcement agencies in India. It is filed in court after an investigation, detailing the charges against the accused and the evidence gathered."],
+    "context_set": ""
+  },
+  {
+    "tag": "criminal_law_bail_types",
+    "patterns": ["What are the types of bail?", "Tell me about different types of bail", "How many types of bail are there?", "What is anticipatory bail?","types of bail"],
+    "responses": ["There are two main types of bail in India: regular bail, granted after an arrest, and anticipatory bail, applied for in anticipation of arrest. Anticipatory bail is a preventive measure when a person believes they may be arrested for a non-bailable offense."],
+    "context_set": ""
+  },
+  {
+    "tag": "criminal_law_rights_accused",
+    "patterns": ["What are the rights of an accused person?", "Tell me about the rights of the accused", "What rights does an accused person have in India?", "What are the legal rights of the accused?","accused person"],
+    "responses": ["The accused person in India has several rights, including the right to a fair trial, the right to legal representation, the right to know the charges, the right to remain silent, and the right to bail in certain cases."],
+    "context_set": ""
+  },
+  {
+    "tag": "family_law_divorce_filing",
+    "patterns": ["How to file for divorce?", "What is the process for filing a divorce?", "How can I file for divorce?","divorce"],
+    "responses": ["Divorce in India can be filed on various grounds like cruelty, desertion, etc. The process involves filing a petition in the family court."],
+    "context_set": ""
+  },
+  {
+    "tag": "family_law_divorce_grounds",
+    "patterns": ["What are the grounds for divorce in India?", "Tell me about grounds for divorce", "What are the valid reasons for divorce in India?","basis of divorce","ground of divorce"],
+    "responses": ["Grounds for divorce in India include cruelty, desertion, adultery, impotency, and mutual consent. These are the legal reasons recognized by courts."],
+    "context_set": ""
+  },
+  {
+    "tag": "family_law_child_custody",
+    "patterns": ["Tell me about child custody laws in India.", "How does child custody work?", "What are the child custody laws in India?","child custody"],
+    "responses": ["Child custody laws in India favor the welfare of the child, with both parents having the right to seek custody. The court makes decisions based on the child's best interest."],
+    "context_set": ""
+  },
+  {
+    "tag": "family_law_alimony",
+    "patterns": ["How does alimony work in India?", "Tell me about alimony", "What are alimony rules in India?","alimony"],
+    "responses": ["Alimony is the financial support one spouse may be required to provide to the other after divorce. The amount depends on factors like income, lifestyle, and duration of marriage."],
+    "context_set": ""
+  },
+  {
+    "tag": "family_law_mutual_divorce",
+    "patterns": ["What is the procedure for mutual consent divorce?", "How does mutual divorce work?", "Tell me about mutual consent divorce in India.","mutual divorce"],
+    "responses": ["In a mutual consent divorce, both parties agree to the terms of the divorce, including child custody and property division, making the process smoother and quicker."],
+    "context_set": ""
+  },
+  {
+    "tag": "family_law_maintenance",
+    "patterns": ["Can a wife claim maintenance after divorce?", "What are the rules for maintenance?", "Can I claim maintenance after divorce?","maintenece pay"],
+    "responses": ["A wife can claim maintenance post-divorce depending on her financial status. The court will decide the amount based on factors like income and lifestyle."],
+    "context_set": ""
+  },
+  {
+    "tag": "family_law_adoption",
+    "patterns": ["What is adoption law in India?", "Tell me about adoption rules in India", "How does adoption work in India?","adoption"],
+    "responses": ["Adoption laws in India ensure the child's welfare, and adoptive parents must follow legal procedures through CARA (Central Adoption Resource Authority). The process includes background checks and legal documentation."],
+    "context_set": ""
+  },
+  {
+    "tag": "family_law_child_rights_adoption",
+    "patterns": ["What are the rights of the child in adoption?", "Tell me about children's rights in adoption", "What rights does an adopted child have?","right of child in adoption"],
+    "responses": ["Children adopted in India have the same rights as biological children, including inheritance and parental care. They are legally considered equal in the eyes of the law."],
+    "context_set": ""
+  },
+  {
+    "tag": "family_law_property_division",
+    "patterns": ["How is property divided in divorce?", "What are the rules for property division in divorce?", "How does property division work in India after divorce?","property division in divorce","property division"],
+    "responses": ["Property division after divorce in India is not automatic. Courts generally divide assets based on contributions made by both parties during the marriage."],
+    "context_set": ""
+  },
+  {
+    "tag": "family_law_domestic_violence",
+    "patterns": ["What is domestic violence under family law?", "Tell me about domestic violence laws", "What is domestic violence in Indian law?","domestic violence"],
+    "responses": ["Domestic violence under family law includes physical, emotional, verbal, and economic abuse by one partner towards another. It is addressed under the Protection of Women from Domestic Violence Act."],
+    "context_set": ""
+  },
+  
+  {
+    "tag": "corporate_law_company_registration",
+    "patterns": ["How to register a company?", "What is the process to register a company?", "How can I register a company in India?", "What are the steps to register a company?"],
+    "responses": ["To register a company in India, you need to follow these steps: Apply for a Digital Signature Certificate (DSC) and Director Identification Number (DIN), get name approval from the Ministry of Corporate Affairs (MCA), and file incorporation forms along with necessary documents like the Memorandum of Association (MoA) and Articles of Association (AoA)."],
+    "context_set": ""
+  },
+  {
+    "tag": "corporate_law_compliance_private_limited",
+    "patterns": ["What are the compliance requirements for a private limited company?", "Tell me about the compliance for a private limited company", "What are the legal obligations of a private limited company?", "What compliance is required for a private limited company in India?"],
+    "responses": ["The compliance requirements for a private limited company in India include filing annual returns, maintaining statutory registers, holding board meetings, preparing financial statements, and conducting audits. Companies must also comply with tax laws and GST regulations."],
+    "context_set": ""
+  },
+  {
+    "tag": "corporate_law_companies_act_2013",
+    "patterns": ["Tell me about the Companies Act 2013.", "What is the Companies Act 2013?", "Explain the Companies Act 2013", "What are the key provisions of the Companies Act 2013?"],
+    "responses": ["The Companies Act 2013 is the legal framework for the incorporation, regulation, and dissolution of companies in India. It outlines provisions for company formation, management, director responsibilities, shareholder rights, and corporate governance. The Act aims to improve transparency and accountability in corporate affairs."],
+    "context_set": ""
+  },
+  {
+    "tag": "corporate_law_shareholders_rights",
+    "patterns": ["What are the rights of shareholders in India?", "Tell me about shareholders' rights", "What are the legal rights of shareholders?", "How are shareholders protected under Indian law?"],
+    "responses": ["Shareholders in India have several rights, including the right to vote at general meetings, the right to receive dividends, the right to inspect company records, and the right to transfer shares. They are also entitled to file a lawsuit in case of mismanagement or oppression by the company."],
+    "context_set": ""
+  },
+  {
+    "tag": "corporate_law_directors_responsibilities",
+    "patterns": ["What are the responsibilities of a company director?", "Tell me about the duties of directors under the Companies Act", "What are the legal duties of a director?", "How is a director responsible under corporate law?"],
+    "responses": ["Company directors in India are responsible for managing the company’s affairs in compliance with the Companies Act 2013. Their duties include acting in good faith, avoiding conflicts of interest, ensuring compliance with legal requirements, and safeguarding the company's assets."],
+    "context_set": ""
+  },
+  {
+    "tag": "corporate_law_board_meetings",
+    "patterns": ["What are the requirements for holding board meetings?", "How often should board meetings be held?", "What is the procedure for conducting board meetings?", "Tell me about board meetings under corporate law."],
+    "responses": ["Board meetings are an essential part of corporate governance. As per the Companies Act 2013, a private limited company must hold at least four board meetings in a financial year, with a gap of no more than 120 days between two consecutive meetings. Minutes of the meetings must be recorded and signed by the directors."],
+    "context_set": ""
+  },
+  {
+    "tag": "corporate_law_moa_aoa",
+    "patterns": ["What is the Memorandum of Association?", "What is the Articles of Association?", "Explain MoA and AoA", "What are MoA and AoA in corporate law?"],
+    "responses": ["The Memorandum of Association (MoA) is a legal document that outlines the company's constitution and scope of activities. The Articles of Association (AoA) defines the company's internal rules and regulations for managing its operations. Together, they are essential for company registration."],
+    "context_set": ""
+  },
+  {
+    "tag": "corporate_law_tax_compliance",
+    "patterns": ["What are the tax compliance requirements for companies?", "Tell me about corporate tax compliance", "What are the tax obligations of companies in India?", "How does tax compliance work for companies?"],
+    "responses": ["Companies in India are required to comply with tax laws, including paying corporate tax, filing annual tax returns, deducting tax at source (TDS), and complying with GST regulations. Non-compliance can result in penalties and legal consequences."],
+    "context_set": ""
+  },
+  {
+    "tag": "corporate_law_audits",
+    "patterns": ["What are the audit requirements for companies?", "Tell me about audit compliance for companies", "When are companies required to be audited?", "What is the audit process for companies?"],
+    "responses": ["Under the Companies Act 2013, every company is required to appoint an auditor to review its financial statements. Audits must be conducted annually to ensure that the company’s financial records are accurate and in compliance with statutory requirements."],
+    "context_set": ""
+  },
+  {
+    "tag": "corporate_law_winding_up",
+    "patterns": ["What is the process for winding up a company?", "How can a company be closed?", "What is the procedure for company liquidation?", "Tell me about the winding-up process under corporate law."],
+    "responses": ["Winding up a company involves the legal process of closing a company and distributing its assets to creditors and shareholders. It can be done voluntarily by the shareholders or compulsorily by the court. The company must settle all debts and comply with legal procedures before closing."],
+    "context_set": ""
+  },
+  {
+    "tag": "consumer_law_rights",
+    "patterns": ["What are my rights as a consumer?", "Tell me about consumer rights in India", "What rights do consumers have in India?", "Explain my rights as a consumer"],
+    "responses": ["Consumer rights in India include the right to safety, information, choice, the right to be heard, the right to redressal, and the right to consumer education."],
+    "context_set": ""
+  },
+  {
+    "tag": "consumer_law_complaint_filing",
+    "patterns": ["How to file a consumer complaint?", "What is the process to file a consumer complaint?", "How can I complain about a defective product?", "How do I file a complaint under consumer law?"],
+    "responses": ["A consumer complaint can be filed in a consumer court if a service or product is found to be defective or if there has been unfair trade practice. The process involves submitting a complaint with details of the issue, supported by evidence like receipts or bills."],
+    "context_set": ""
+  },
+  {
+    "tag": "consumer_law_protection",
+    "patterns": ["Tell me about consumer protection laws in India.", "What is consumer protection in India?", "Explain consumer protection laws", "What laws protect consumers in India?"],
+    "responses": ["Consumer protection laws in India are designed to safeguard consumers from unfair practices. The Consumer Protection Act 2019 is the primary law that provides consumers with rights and allows them to file complaints against defective products and services."],
+    "context_set": ""
+  },
+  {
+    "tag": "consumer_law_online_shopping",
+    "patterns": ["What are my rights in online shopping?", "How are consumers protected in online shopping?", "Can I file a complaint for a defective online purchase?", "Tell me about consumer rights in e-commerce."],
+    "responses": ["In online shopping, consumers have the right to safety, information, and redressal. If you receive a defective or wrong product, you can return or exchange it as per the seller's policy or file a complaint with the consumer court."],
+    "context_set": ""
+  },
+  {
+    "tag": "consumer_law_warranty",
+    "patterns": ["What are my rights regarding warranty?", "Tell me about warranties in consumer law", "How does warranty work?", "Can I claim a replacement under warranty?"],
+    "responses": ["Under consumer law, you have the right to repair, replacement, or refund if a product under warranty is defective. The warranty terms must be clearly provided by the seller or manufacturer."],
+    "context_set": ""
+  },
+  {
+    "tag": "consumer_law_unfair_trade",
+    "patterns": ["What is unfair trade practice?", "Explain unfair trade practice in consumer law", "What are examples of unfair trade practice?", "How does the law protect against unfair trade?"],
+    "responses": ["Unfair trade practices include false advertising, defective products, and misleading pricing. The Consumer Protection Act protects consumers from these practices, and you can file a complaint if you are a victim."],
+    "context_set": ""
+  },
+  {
+    "tag": "consumer_law_grievance_redressal",
+    "patterns": ["What is the consumer grievance redressal process?", "How do I resolve consumer grievances?", "What is the process for redressal in consumer law?", "How can I get my consumer issue resolved?"],
+    "responses": ["The consumer grievance redressal process involves filing a complaint with the consumer forum or court, providing evidence of the issue, and following the legal process to seek redressal, which could include repair, replacement, or compensation."],
+    "context_set": ""
+  },
+  {
+    "tag": "consumer_law_penalties",
+    "patterns": ["What are the penalties for violating consumer rights?", "What happens if a company violates consumer rights?", "What are the consequences of violating consumer laws?", "Tell me about penalties under consumer law"],
+    "responses": ["Violating consumer rights can lead to penalties such as fines, imprisonment, or compensation to the consumer. The severity of the penalty depends on the nature of the violation under the Consumer Protection Act."],
+    "context_set": ""
+  },
+  {
+    "tag": "consumer_law_product_liability",
+    "patterns": ["What is product liability?", "Explain product liability in consumer law", "Who is responsible for defective products?", "How does product liability work?"],
+    "responses": ["Product liability refers to the responsibility of manufacturers, distributors, or sellers for defective products that cause harm to consumers. Under consumer law, affected consumers can seek compensation or replacement."],
+    "context_set": ""
+  },
+  {
+    "tag": "consumer_law_dispute_resolution",
+    "patterns": ["What are the ways to resolve consumer disputes?", "Tell me about consumer dispute resolution", "How are consumer disputes settled?", "What are the options for resolving consumer disputes?"],
+    "responses": ["Consumer disputes can be resolved through negotiation, mediation, or by filing a complaint in a consumer court. The courts offer a formal legal avenue for resolving disputes related to defective products or services."],
+    "context_set": ""
+  }
+]
+}
